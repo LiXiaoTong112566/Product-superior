@@ -17,30 +17,46 @@ const store = {
 }
 
 class App extends Component {
-
+  componentDidMount() { }
   config = {
     pages: [
-      'pages/index/index'
+      'pages/index/index',
+      'pages/mine/mine',
+      'pages/shoppingCar/shoppingCar',
+
+
     ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
-    }
+    },
+    tabBar: {
+      "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      }, {
+          "pagePath": "pages/mine/mine",
+        "text": "购物车"
+      }, {
+          "pagePath": "pages/shoppingCar/shoppingCar",
+        "text": "我的"
+      }]
+    },
   }
 
-  componentDidMount () {}
 
-  componentDidShow () {}
 
-  componentDidHide () {}
+  componentDidShow() { }
 
-  componentDidCatchError () {}
+  componentDidHide() { }
+
+  componentDidCatchError() { }
 
   // 在 App 类中的 render() 函数没有实际作用
   // 请勿修改此函数
-  render () {
+  render() {
     return (
       <Provider store={store}>
         <Index />

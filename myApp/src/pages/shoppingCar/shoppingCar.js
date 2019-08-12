@@ -7,7 +7,7 @@ import './index.scss'
 
 @inject('counterStore')
 @observer
-class Index extends Component {
+class ShoppingCar extends Component {
   componentWillMount() { }
   componentDidMount() { }
   componentWillUnmount() { }
@@ -24,22 +24,14 @@ class Index extends Component {
 
   componentDidHide() { }
 
-  increment = () => {
-    const { counterStore } = this.props
-    counterStore.increment()
-  }
-
-
 
   render() {
-    const { counterStore: { counter } } = this.props
     return (
-      <View className='index'>
-        <Button onClick={this.increment}>+</Button>
-        <Text>{counter}</Text>
+      <View className='shoppingcarwrap'>
+       
       </View>
     )
   }
 }
 
-export default Index 
+export default ShoppingCar 
