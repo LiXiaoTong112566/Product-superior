@@ -23,6 +23,7 @@ class App extends Component {
       'pages/index/index',
       'pages/mine/mine',
       'pages/shoppingCar/shoppingCar',
+      'pages/commodityDetails/commodityDetail',
 
 
     ],
