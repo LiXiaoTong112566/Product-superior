@@ -7,6 +7,7 @@ import './index.scss'
 
 @inject('counterStore')
 @observer
+
 class Index extends Component {
 
   config = {
