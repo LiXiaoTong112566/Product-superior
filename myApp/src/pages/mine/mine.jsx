@@ -2,11 +2,9 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Button, Text } from '@tarojs/components'
 import { observer, inject } from '@tarojs/mobx'
 
-import './index.scss'
+import style from './mine.module.scss'
 
 
-@inject('counterStore')
-@observer
 class Mine extends Component {
   componentWillMount() { }
   componentDidMount() { }
@@ -30,7 +28,7 @@ class Mine extends Component {
 
   render() {
     return (
-      <View className='minewrap'>
+      <View className={style.mine}>
         
       </View>
     )

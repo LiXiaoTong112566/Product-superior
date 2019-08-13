@@ -2,11 +2,9 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Button, Text } from '@tarojs/components'
 import { observer, inject } from '@tarojs/mobx'
 
-import './index.scss'
+import style from './shoppingCar.module.scss'
 
 
-@inject('counterStore')
-@observer
 class ShoppingCar extends Component {
   componentWillMount() { }
   componentDidMount() { }
@@ -27,7 +25,7 @@ class ShoppingCar extends Component {
 
   render() {
     return (
-      <View className='shoppingcarwrap'>
+      <View className={style.shoppingcarwrap}>
        
       </View>
     )

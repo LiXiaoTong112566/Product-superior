@@ -2,7 +2,7 @@ import Taro, { Component } from '@tarojs/taro'
 import { Provider } from '@tarojs/mobx'
 import Index from './pages/index'
 
-import counterStore from './store/counter'
+import store from './store'
 
 import './app.scss'
 
@@ -12,9 +12,6 @@ import './app.scss'
 //   require('nerv-devtools')
 // }
 
-const store = {
-  counterStore
-}
 
 class App extends Component {
   componentDidMount() { }
@@ -22,9 +19,7 @@ class App extends Component {
     pages: [
       'pages/index/index',
       'pages/mine/mine',
-      'pages/shoppingCar/shoppingCar',
-
-
+      'pages/shoppingCar/shoppingCar'
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -33,15 +28,16 @@ class App extends Component {
       navigationBarTextStyle: 'black'
     },
     tabBar: {
-      "list": [{
-        "pagePath": "pages/index/index",
-        "text": "首页"
+      selectedColor: "0ff",
+      list: [{
+        pagePath: "pages/index/index",
+        text: "首页"
       }, {
-          "pagePath": "pages/mine/mine",
-        "text": "购物车"
+        pagePath: "pages/mine/mine",
+        text: "购物车"
       }, {
-          "pagePath": "pages/shoppingCar/shoppingCar",
-        "text": "我的"
+        pagePath: "pages/shoppingCar/shoppingCar",
+        text: "我的"
       }]
     },
   }
