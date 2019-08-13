@@ -1,5 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Button, Text } from '@tarojs/components'
+import { View, Button, Text,ScrollView } from '@tarojs/components'
 import { observer, inject } from '@tarojs/mobx'
 
 import './special.scss'
@@ -8,6 +8,12 @@ import './special.scss'
 @inject('counterStore')
 @observer
 class Special extends Component {
+    constructor(){
+        super()
+        this.state={
+            flag:false
+        }
+    }
   componentWillMount() { }
   componentDidMount() { 
     
@@ -26,21 +32,36 @@ class Special extends Component {
 
   componentDidHide() { }
 
-  increment = () => {
-    const { counterStore } = this.props
-    counterStore.increment()
+  increment = () => {}
+ //吸顶
+  onScrollToUpper=(e)=>{
+    if(e.target.scrollTop >=230){
+       // console.log('top...............',this.state.flag)
+        this.setState({
+            flag:true
+        })
+    }else{
+        //console.log(e.target.scrollTop)
+        this.setState({
+            flag:false
+        })
+    }
   }
-
   render() {
-    const { counterStore: { counter } } = this.props
+      let flag = this.state.flag;
     return (
+    <ScrollView 
+        scrollY
+        onScroll={this.onScrollToUpper}
+        className="scroll"
+        >
       <View className="special">
          {/* 需要吸顶效果 */}
          <View className="topImg">
             专题图片
          </View>
-         <View className="navigation">
-           南靖特产专区
+         <View className={flag ?"navigation isFixed" :"navigation"}>
+             南靖特产专区
          </View>
          <View>
             <View className="listWrap">
@@ -117,10 +138,9 @@ class Special extends Component {
                     </View>
                 </View>
             </View>
-            
-            
          </View>
       </View>
+      </ScrollView>
     )
   }
 }

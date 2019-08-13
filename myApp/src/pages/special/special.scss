@@ -1,7 +1,9 @@
+.scroll{
+    width:100%;
+    height:100%;
+}
 .special{
     width: 100%;
-    height: 100%;
-    overflow: scroll;
     background:#eee;
     .topImg{
         width:100%;
@@ -11,7 +13,8 @@
     }
     .navigation{
         width:100%;
-        height:94rpx;
+        height:92rpx;
+        border-bottom: 1rpx solid #ccc;
         line-height: 94rpx;
         background:#fff;
         color:red;
@@ -20,6 +23,14 @@
     }
     
 }
+// 吸顶
+.isFixed{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+  }
 .listWrap{
     width: 100%;
     display: flex;
