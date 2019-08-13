@@ -12,7 +12,9 @@ class IndexList extends Component {
   constructor(props){
     super(props)
     this.state={
-      indexLIstData:[]
+      indexLIstData:[],
+      indexBotData:[],
+      childs:[]
     }
   }
   componentWillMount() { }
@@ -22,7 +24,9 @@ class IndexList extends Component {
     Taro.request({
       url: 'https://upapi.jinaup.com/api/open/product/category/query/1.0.0',
       header: {
-        'content-type': 'application/json',
+        "content-type": "application/x-www-form-urlencoded",
+        'trackId': 'F649B34989975F268EA5BC4927E7C2365DBB8293767D955992FF410009F6B2DE301BCDFBE166230EBF083C72B5B6A948277C0041980DAC5E46FA1EF475B12D4773F05A5E984CF1D814817C9546DF831BF9D9BD6C1F2231AFA450731B6837E7084E77DC9918A436BC'
+
       },
       method:'POST',
       success:(res)=>{
@@ -63,53 +67,34 @@ class IndexList extends Component {
         <ScrollView className={style.top} scrollX="true">
           {
             this.state.indexLIstData&&this.state.indexLIstData.map((item,index)=>{
-              return  <View className={style.li}>{item.cname}</View>
+              return  <View className={style.li} onClick={this.topList.bind(this,item.cid,index)}>{item.cname}</View>
+            
             })
           }
         </ScrollView>
         <View className={style.centen}>
-          <View className={style.cenZi}>
-            <Image
-              className={style.img}
-              src='http://img1.imgtn.bdimg.com/it/u=2174909441,2495215020&fm=26&gp=0.jpg'
-            />
-            <Label className={style.txt}>资环</Label>
-          </View>
-          <View className={style.cenZi}>
-            <Image
-              className={style.img}
-              src='http://img1.imgtn.bdimg.com/it/u=2174909441,2495215020&fm=26&gp=0.jpg'
-            />
-            <Label className={style.txt}>资环</Label>
-          </View>
-          <View className={style.cenZi}>
-            <Image
-              className={style.img}
-              src='http://img1.imgtn.bdimg.com/it/u=2174909441,2495215020&fm=26&gp=0.jpg'
-            />
-            <Label className={style.txt}>资环</Label>
-          </View>
-          <View className={style.cenZi}>
-            <Image
-              className={style.img}
-              src='http://img1.imgtn.bdimg.com/it/u=2174909441,2495215020&fm=26&gp=0.jpg'
-            />
-            <Label className={style.txt}>资环</Label>
-          </View>
-          <View className={style.cenZi}>
-            <Image
-              className={style.img}
-              src='http://img1.imgtn.bdimg.com/it/u=2174909441,2495215020&fm=26&gp=0.jpg'
-            />
-            <Label className={style.txt}>资环</Label>
-          </View>
-          <View className={style.cenZi}>
-            <Image
-              className={style.img}
-              src='http://img1.imgtn.bdimg.com/it/u=2174909441,2495215020&fm=26&gp=0.jpg'
-            />
-            <Label className={style.txt}>资环</Label>
-          </View>
+          {
+            console.log(this.state.childs)
+          }
+          {/* {
+             this.state.indexLIstData&&this.state.indexLIstData.forEach((item,index)=>{
+              item.childs&&item.childs.map((i,index)=>{
+                console.log(i.cname)
+                    // return (
+                    //   <View className={style.cenZi}>
+                    //   <Image
+                    //     className={style.img}
+                    //     src={i.imgUrl}
+                    //   />
+                    //   <Label className={style.txt}>{i.cname}</Label>
+                    // </View>
+                    // )
+                 })
+             })
+          } */}
+       
+       
+        
          
         </View>
         <View className={style.tabr}>
@@ -121,10 +106,37 @@ class IndexList extends Component {
                 <Label className={style.bo}>▽</Label>   */}
             </View>
         </View>
-        <DetailList></DetailList>
+        <DetailList data={this.state.indexBotData}></DetailList>
     </View>
     )
   }
+
+  topList(id,index){
+    Taro.request({
+      url: 'https://upapi.jinaup.com/api/open/product/category/productList/1.0.0',
+      data: {
+        pageIndex:1,
+        cid: id,
+        sortType:1
+      },
+      header: {
+        "content-type": "application/x-www-form-urlencoded",
+        'trackId': 'F649B34989975F268EA5BC4927E7C2365DBB8293767D955992FF410009F6B2DE301BCDFBE166230EBF083C72B5B6A948277C0041980DAC5E46FA1EF475B12D4773F05A5E984CF1D814817C9546DF831BF9D9BD6C1F2231AFA450731B6837E7084E77DC9918A436BC'
+
+      },
+      method:'POST',
+      success:(res)=>{
+        console.log(res.data.result,'res++++++++++++++++++++++++++++++++++++++++++')
+        this.setState({
+          indexBotData:res.data.result,
+          childs:this.state.indexLIstData[index]
+        })
+       
+      }
+    })
+  }
+
+
 }
 
 export default IndexList 
