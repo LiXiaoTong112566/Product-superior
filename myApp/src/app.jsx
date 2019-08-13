@@ -23,7 +23,8 @@ class App extends Component {
       'pages/index/index',
       'pages/mine/mine',
       'pages/shoppingCar/shoppingCar',
-      'pages/special/special'
+      'pages/special/special',
+      "pages/search/search"
 
     ],
     window: {
