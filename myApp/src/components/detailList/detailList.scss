@@ -1,0 +1,50 @@
+.detailList{
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    .dl{
+        width: 49%;
+        margin-top: 20px;
+        .dt{
+            text-align: center;
+            .image{
+                display: inline-block;
+                width: 150px;
+                height: 300px;
+                background: #f90;
+            }
+        }
+        .dd{
+            width: 100%;
+            .tet{
+                 overflow: hidden;
+                 text-overflow: ellipsis;
+                 white-space: nowrap;
+            }
+            .taxes{
+                display: inline-block;
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                border: solid 1px red;
+            }
+            .unit{
+                font-size: 36px;
+                color: red;
+            }
+            .left{
+                color: #a87831;
+                padding: 10px;
+                
+            }
+            .right{
+                background: #ffe8ed;
+                color: #fc5d7b;
+                margin-left: 10px;
+            }
+        }
+    }
+  
+}

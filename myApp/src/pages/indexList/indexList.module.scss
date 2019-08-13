@@ -1,0 +1,57 @@
+.index {
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+    .top {
+        width: 100%;
+        display: flex;
+        white-space: nowrap;
+        height: 100rpx;
+        background: #fff;        
+        .li {
+            font-size: 32rpx;
+            display: inline-block;
+            height: 100rpx;
+            text-align: center;
+            color: #484848;
+            box-sizing: border-box;
+            margin: 0 20rpx;            
+        }
+    }
+    .centen{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        background: #fff;
+        margin-top: 10px;
+        .cenZi{
+            width: 20%;
+            text-align: center;
+            padding: 19px;
+            .img{
+                width: 100px;
+                height: 100px;
+            }
+            .txt{
+               display: block;
+               padding: 10px 0;
+            }
+        }
+    }
+    .tabr{
+        width: 100%;
+        display: flex;
+        background: #fff;
+        margin-top: 10px;
+        View{
+            width: 33%;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            margin-top: 10px;
+           
+
+        }
+    }
+}
+
