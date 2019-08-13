@@ -2,11 +2,7 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Button, Text, Swiper, SwiperItem } from '@tarojs/components'
 import { observer, inject } from '@tarojs/mobx'
 
-// import style from './commodityDetail.module.scss'
 
-
-@inject('counterStore')
-@observer
 class SwiperComponent extends Component {
   componentWillMount() { }
   componentDidMount() { }
@@ -25,12 +21,11 @@ class SwiperComponent extends Component {
   componentDidHide() { }
 
   increment = () => {
-    const { counterStore } = this.props
-    counterStore.increment()
+   
   }
 
   render() {
-    const { counterStore: { counter } } = this.props
+   
     return (
       <Swiper
         className='test-h'

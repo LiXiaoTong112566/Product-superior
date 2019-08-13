@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="33px" viewBox="0 0 80 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>马上抢@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="79.2553691%" y1="9.06613372%" x2="20.0120915%" y2="87.6044695%" id="linearGradient-1">
+            <stop stop-color="#F86367" offset="0%"></stop>
+            <stop stop-color="#FB2579" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="小C首页-" transform="translate(-318.000000, -1755.000000)">
+            <g id="分组-3" transform="translate(0.000000, 770.000000)">
+                <g id="Repeat-Group" transform="translate(0.000000, 38.000000)">
+                    <g id="秒杀list" transform="translate(0.000000, 852.907243)">
+                        <g id="商品列表list">
+                            <g id="马上抢" transform="translate(318.000000, 95.000000)">
+                                <rect id="Rectangle-37" fill="url(#linearGradient-1)" x="0" y="0" width="80" height="32" rx="5"></rect>
+                                <text font-family="PingFangSC-Medium, PingFang SC" font-size="16" font-weight="400" fill="#FFFFFF">
+                                    <tspan x="16" y="22">马上抢</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

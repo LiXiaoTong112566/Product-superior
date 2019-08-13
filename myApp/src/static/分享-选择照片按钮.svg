@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>分享-选择照片按钮@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分享" transform="translate(-373.000000, -219.000000)">
+            <g id="分组-2-copy" transform="translate(325.000000, 217.000000)">
+                <g id="分享-选择照片按钮" transform="translate(48.000000, 2.000000)">
+                    <g id="Group-8" transform="translate(0.947674, 0.406977)">
+                        <circle id="Oval" fill="#BBBBBB" cx="9" cy="9" r="9"></circle>
+                        <path d="M12.9969343,7.12074353 L8.4879362,11.8008168 C8.36911722,11.9281357 8.20569293,12 8.03498033,12 C7.86426773,12 7.70084344,11.9281357 7.58202446,11.8008168 L4.98765273,9.10638115 C4.73744909,8.84649605 4.73744909,8.42513906 4.98765272,8.16525396 C5.23785635,7.90536886 5.64351659,7.90536885 5.89372023,8.16525395 L8.04401453,10.3987525 L12.1030163,6.19838389 C12.2644636,6.02820995 12.5013501,5.960996 12.7236692,6.02228039 C12.9459884,6.08356478 13.1196147,6.2639405 13.1785779,6.49487267 C13.237541,6.72580485 13.1727902,6.97184592 13.008928,7.13951107 L12.9969343,7.12074353 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="14px" viewBox="0 0 12 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>删除@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="搜索" transform="translate(-382.000000, -82.000000)" fill="#D3D3D3">
+            <g id="删除" transform="translate(382.000000, 82.000000)">
+                <path d="M9,1.5 L11.4375,1.5 C11.7481602,1.5 12,1.75183983 12,2.0625 C12,2.37316017 11.7481602,2.625 11.4375,2.625 L0.5625,2.625 C0.251839828,2.625 3.80448985e-17,2.37316017 0,2.0625 C-3.80448985e-17,1.75183983 0.251839828,1.5 0.5625,1.5 L3,1.5 L3.75,0 L8.25,0 L9,1.5 Z" id="Combined-Shape"></path>
+                <path d="M10.2916667,3.75 L9.85494778,11.61094 C9.79606816,12.6707732 8.91949448,13.5 7.85802707,13.5 L4.14197293,13.5 C3.08050552,13.5 2.20393184,12.6707732 2.14505222,11.61094 L1.70833333,3.75 L10.2916667,3.75 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
