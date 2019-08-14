@@ -6,18 +6,22 @@ import SwiperComponent from "../../components/swiperComponent/swiperComponent.js
 import Count from "../../components/count/count.jsx";
 import Purchase from "../../components/purchase/purchase.js";
 console.log("购物",Purchase)
-
+import vipImage from "../../static/images/黑卡@2x.png";
 @inject('detail')
 @observer
 class CommodityDetail extends Component {
   componentWillMount() { }
   componentDidMount() {
     this.props.detail.getProductDetail({ pid: 549 });
+    this.props.detail.getdetailPicture({pid:549,basePid:549,userIdentity: 2});
+   
+     
     console.log(this.props);
   }
 
   shopFn(){
     this.props.detail.showShop();
+
   }
 //数量的弹窗的显示
 showCountFn(){
@@ -43,7 +47,8 @@ showCountFn(){
   }
 
   render() {
-    console.log("获取到的数据",this.props.detail)
+    console.log("获取到的数据",this.props.detail.productDetail);
+    let {productDetail,detailPictureData}=this.props.detail;
     return (
       <View className={style.commodityDetailBox}>
         {/* 主要的内容 */}
@@ -56,9 +61,9 @@ showCountFn(){
           {/* 价格 */}
           <View className={style.priceBox}>
             <View className={style.priceLeft}>
-              <View>￥75</View>
-              <View> 73.02</View>
-              <Image src=""></Image>
+              <View>￥{productDetail&&productDetail.marketPrice}</View>
+              <View className={style.salePrice}>{productDetail.salesPrice&&productDetail.salesPrice}</View>
+              <Image className={style.img} src={vipImage}></Image>
             </View>
             <View className={style.priceRight}>
               分享赚1.98
@@ -66,7 +71,7 @@ showCountFn(){
           </View>
           {/* 商品的标题 */}
           <View className={style.title}>
-            澳洲直邮的面霜 澳洲直邮的面霜 澳洲直邮的面霜
+            {productDetail.title&&productDetail.title}
         </View>
           <View className={style.express}>快递包邮</View>
 
@@ -77,18 +82,20 @@ showCountFn(){
               <View>规格</View>
             </View>
             <View className={style.dimensionsRight}>
-              确认
+            >
           </View>
           </View>
           <View className={style.clue}>
             <View className={style.reminder}>提示:
           </View>
-            <Text className={style.content}>新疆地区包邮</Text>
+            <Text className={style.content}>西藏自治区,新疆维吾尔自治区不包邮,运费加13.00元</Text>
           </View>
 
           {/* 内容 */}
           <View className={style.main}>
-            主题的内容
+           {detailPictureData&&detailPictureData.map((item,index)=>{
+             return <Image  key={item.pid} style={{height:item.imgHeight+"px" }}src={item.imgUrl}></Image>
+           })}
           </View>
         </View>
         {console.log("数量123",this.props.detail.countFlag)}

@@ -8,7 +8,9 @@ import "./count.scss";
 
 class Count extends Component {
     componentWillMount() { }
-    componentDidMount() { }
+    componentDidMount() {
+        this.props.detail.getskuQuery({pid: 549,vids:"[5832]"})
+     }
     componentWillUnmount() { }
 
     config = {
@@ -24,12 +26,16 @@ class Count extends Component {
     componentDidHide() { }
 
     increment = () => {
+        
+
 
     }
 
     render() {
-        return (
 
+        let {productDetail}=this.props.detail;
+        console.log("获取到的数据123",productDetail)
+        return (
             <View className="addCountBox">
                 <View className="box">
                 {/* 数量 */}
@@ -45,7 +51,7 @@ class Count extends Component {
 
                     <View className="articlRight">
                         <View className="price">￥299</View>
-                        <View className="price">库存： 20</View>
+                        <View className="price">库存:{}</View>
                     </View>
                 </View>
 

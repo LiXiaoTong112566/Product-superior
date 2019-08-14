@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-13 16:15:31
- * @LastEditTime: 2019-08-14 08:38:33
+ * @LastEditTime: 2019-08-14 10:32:27
  * @LastEditors: Please set LastEditors
  */
 import DetailModule from './module/detail';

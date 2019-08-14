@@ -1,8 +1,9 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Button, Text, Swiper, SwiperItem } from '@tarojs/components'
+import { View, Button, Text, Swiper, SwiperItem,Image } from '@tarojs/components'
 import { observer, inject } from '@tarojs/mobx'
-
-
+import "./swiper.Componentmodule.scss";
+@inject('detail')
+@observer
 class SwiperComponent extends Component {
   componentWillMount() { }
   componentDidMount() { }
@@ -26,6 +27,8 @@ class SwiperComponent extends Component {
 
   render() {
    
+    let {productDetail}=this.props.detail;
+    console.log("获取到的图片数据",productDetail);
     return (
       <Swiper
         className='test-h'
@@ -35,14 +38,9 @@ class SwiperComponent extends Component {
         indicatorDots
         autoplay>
         <SwiperItem>
-          <View className='demo-text-1'>1</View>
+          <View className='demo-text-1'><Image src={productDetail.mainImgUrl} alt=""/></View>
         </SwiperItem>
-        <SwiperItem>
-          <View className='demo-text-2'>2</View>
-        </SwiperItem>
-        <SwiperItem>
-          <View className='demo-text-3'>3</View>
-        </SwiperItem>
+    
       </Swiper>
     )
   }
