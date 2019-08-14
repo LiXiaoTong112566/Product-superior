@@ -1,3 +1,10 @@
+/*
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-08-14 08:51:54
+ * @LastEditTime: 2019-08-14 10:39:02
+ * @LastEditors: Please set LastEditors
+ */
 import Taro, { Component } from '@tarojs/taro'
 import { View, Button, Text,Image } from '@tarojs/components'
 import { observer, inject } from '@tarojs/mobx'
@@ -5,9 +12,8 @@ import { observer, inject } from '@tarojs/mobx'
 import './search.scss'
 import search from "../../static/seek/search.png"
 import del from "../../static/seek/del.png"
+ 
 
-// @inject('counterStore')
-// @observer
 class Search extends Component {
   componentWillMount() { 
    
@@ -30,8 +36,7 @@ class Search extends Component {
   componentDidHide() { }
 
   increment = () => {
-    // const { counterStore } = this.props
-    // counterStore.increment()
+    
   }
 
   render() {

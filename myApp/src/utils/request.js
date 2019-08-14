@@ -1,8 +1,15 @@
+/*
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-08-14 08:51:54
+ * @LastEditTime: 2019-08-14 14:19:40
+ * @LastEditors: Please set LastEditors
+ */
 var Fly=require("flyio/dist/npm/wx") 
 var fly=new Fly;
 
 fly.config.headers={
-    "content-type": "application/x-www-form-urlencoded",
+    "content-type":"application/x-www-form-urlencoded"
 }
 
 //定义公共headers

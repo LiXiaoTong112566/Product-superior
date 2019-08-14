@@ -4,26 +4,19 @@ import Index from './pages/index'
 
 import store from './store/index'
 import './app.scss'
-// import Detail from './pages/commodityDetails/commodityDetail'
-// 如果需要在 h5 环境中开启 React Devtools
-// 取消以下注释：
-// if (process.env.NODE_ENV !== 'production' && process.env.TARO_ENV === 'h5')  {
-//   require('nerv-devtools')
-// }
-
 
 class App extends Component {
   componentDidMount() { }
   config = {
     pages: [
-     
       "pages/address/index",
+      'pages/index/index',
+      'pages/shoppingCar/shoppingCar',
+      'pages/mine/mine',
+      'pages/myorder/myorder',
+      'pages/commodityDetails/commodityDetail',
       'pages/indexList/indexList',
       'pages/delivery/index',
-      'pages/index/index',
-      'pages/mine/mine',
-      'pages/commodityDetails/commodityDetail',
-      'pages/shoppingCar/shoppingCar',
       'pages/special/special',
       "pages/search/search",
       "pages/binding/binding",
