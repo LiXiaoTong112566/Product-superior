@@ -1,6 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Button, Text } from '@tarojs/components'
 import { observer, inject } from '@tarojs/mobx'
+import style from './mine.module.scss'
 
 import style from './mine.module.scss'
 
@@ -15,7 +16,7 @@ class Mine extends Component {
   }
 
   componentWillReact() {
-    console.log('componentWillReact')
+  
   }
 
   componentDidShow() { }
@@ -28,11 +29,7 @@ class Mine extends Component {
 
   render() {
     return (
-<<<<<<< HEAD
-      <View className={style.mine}>
-=======
       <View className={style.minewrap}>
->>>>>>> hmm
         
       </View>
     )

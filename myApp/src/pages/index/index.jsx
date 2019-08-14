@@ -51,10 +51,9 @@ class Index extends Component {
 
   componentDidHide() { }
 
-  // increment = () => {
-  //   const { counterStore } = this.props
-  //   counterStore.increment()
-  // }
+  increment = () => {
+  
+  }
 
 
 

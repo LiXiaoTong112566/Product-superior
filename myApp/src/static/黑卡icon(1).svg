@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="51px" viewBox="0 0 72 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>黑卡icon@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="9.91210938%" y1="5.53385417%" x2="57.6605903%" y2="94.0372243%" id="linearGradient-1">
+            <stop stop-color="#666667" offset="0%"></stop>
+            <stop stop-color="#3D3D3E" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="72" height="51" rx="7"></rect>
+        <linearGradient x1="67.3770358%" y1="0%" x2="45.6354857%" y2="91.3753563%" id="linearGradient-4">
+            <stop stop-color="#000000" stop-opacity="0.0772758152" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#F4CE9F" offset="0%"></stop>
+            <stop stop-color="#CC9858" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="黑卡icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Path-7">
+            <g id="会员卡">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <polygon id="Path-7" fill="url(#linearGradient-4)" opacity="0.237149004" mask="url(#mask-3)" points="63.2763672 -3 30 56.6152344 89.6630859 53.5361328 89.6630859 21.3955078 77.9960938 -0.725585937"></polygon>
+                <rect id="Rectangle-31" fill="url(#linearGradient-5)" mask="url(#mask-3)" x="9" y="9" width="12" height="5"></rect>
+                <rect id="Rectangle-30" fill="url(#linearGradient-5)" mask="url(#mask-3)" x="0" y="39" width="72" height="3"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

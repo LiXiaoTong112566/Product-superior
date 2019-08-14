@@ -1,3 +1,10 @@
+/*
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-08-12 17:01:47
+ * @LastEditTime: 2019-08-12 20:29:21
+ * @LastEditors: Please set LastEditors
+ */
 const config = {
   projectName: 'myApp',
   date: '2019-8-12',
