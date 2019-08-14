@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>详情页返回@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="商品详情页-优惠券" transform="translate(-11.000000, -24.000000)">
+            <g id="分组-3">
+                <g id="分组-2">
+                    <g id="Group-66" transform="translate(11.000000, 24.000000)">
+                        <g id="详情页返回">
+                            <circle id="Oval-15" fill="#FFFFFF" opacity="0.9" cx="16.5" cy="16.5" r="16.5"></circle>
+                            <g id="返回" transform="translate(12.000000, 8.000000)" fill="#323A45" fill-rule="nonzero">
+                                <path d="M1.7402524,8.49673381 L9.78916536,1.21321198 C10.0702782,0.937120653 10.0702782,0.483159798 9.78916536,0.207068492 C9.50805251,-0.0690228306 9.05149097,-0.0690228306 8.7716948,0.207068492 L0.20466516,7.95808815 C0.0545627433,8.10699487 -0.00962579839,8.3056421 0.00123687683,8.49673381 C-0.00995497405,8.69443659 0.0545627433,8.89308382 0.20466516,9.04167573 L8.77136563,16.7926954 C9.0511618,17.0691015 9.50805249,17.0691015 9.78883618,16.7926954 C10.069949,16.5090486 10.069949,16.0626432 9.78883618,15.7865519 L1.7402524,8.49673381" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

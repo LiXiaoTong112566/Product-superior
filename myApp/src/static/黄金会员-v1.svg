@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="17px" viewBox="0 0 38 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>总监-v3@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="10.6875" cy="8.5" rx="5.9375" ry="6.07142857"></ellipse>
+        <filter x="-21.1%" y="-28.8%" width="158.9%" height="157.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="1" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.276295936   0 0 0 0 0.285545677   0 0 0 0 0.322544643  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="总监-v3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="黄金会员-v1">
+            <rect id="Path" fill="#4F5159" x="3.5625" y="1.21428571" width="34.4375" height="14.5714286" rx="7.28571429"></rect>
+            <text id="V3" font-family="DINAlternate-Bold, DIN Alternate" font-size="11" font-weight="bold" fill="#FFFFFF">
+                <tspan x="20.1875" y="12.7142857">V3</tspan>
+            </text>
+            <g id="Oval-17">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <ellipse id="Oval-17" fill="#60646A" cx="8.3125" cy="8.5" rx="8.3125" ry="8.5"></ellipse>
+            <g id="钻石" transform="translate(3.000000, 6.000000)">
+                <polygon id="Triangle" fill="#00BFFF" transform="translate(5.422844, 5.258547) scale(-1, -1) translate(-5.422844, -5.258547) " points="5.42207718 2.58726957 8.71549479 7.92982456 2.1301935 7.92982456"></polygon>
+                <polygon id="Triangle" fill="#00FFFF" transform="translate(2.711806, 5.258547) scale(-1, -1) translate(-2.711806, -5.258547) " points="0 2.58726957 5.42361111 7.92982456 3.27756076 7.92982456"></polygon>
+                <polygon id="Triangle" fill="#00FFFF" transform="translate(8.139818, 5.197593) scale(1, -1) translate(-8.139818, -5.197593) " points="5.42361111 2.52631579 10.8560248 7.80390368 8.70117188 7.86887079"></polygon>
+                <polygon id="Triangle" fill="#5FFFFF" points="2.1335178 0.139220121 5.50048489 0.139220121 2.1335178 2.58689693"></polygon>
+                <polygon id="Triangle" fill="#5FFFFF" transform="translate(7.063846, 1.372944) scale(-1, 1) translate(-7.063846, -1.372944) " points="5.41562907 0.158991228 8.71206326 0.158991228 5.41562907 2.58689693"></polygon>
+                <polygon id="Triangle" fill="#CEFFFF" points="5.5 0.140350877 8.72116428 2.58689693 2.1335178 2.58689693"></polygon>
+                <polygon id="Triangle-Copy" fill="#00BFFF" points="2.13239882 0.130208333 2.13239882 2.58689693 0 2.58689693"></polygon>
+                <polygon id="Triangle-Copy" fill="#00C7FF" transform="translate(9.774533, 1.368695) scale(-1, 1) translate(-9.774533, -1.368695) " points="10.8407322 0.140350877 10.8407322 2.59703947 8.70833333 2.59703947"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

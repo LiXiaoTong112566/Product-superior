@@ -5,6 +5,7 @@ import { View, Image } from '@tarojs/components'
 import { observer, inject } from '@tarojs/mobx'
 import wudingdan from '../../static/images/wudingdan.png'
 import bigimg from '../../img/baobao.jpg'
+
 import './myorder.scss'
 
 // @inject('counterStore')

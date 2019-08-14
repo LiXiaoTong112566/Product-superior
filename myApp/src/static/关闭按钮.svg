@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="17px" viewBox="0 0 15 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>关闭按钮@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-0.3%" y="-0.3%" width="100.6%" height="100.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="商品详情页A-选择尺码弹出层" transform="translate(-389.000000, -210.000000)" fill="#484848" fill-rule="nonzero">
+            <g id="购买选择颜色尺码" filter="url(#filter-1)" transform="translate(0.000000, 193.000000)">
+                <g id="关闭按钮" transform="translate(389.000000, 17.000000)">
+                    <path d="M8.64936078,7.99455487 L14.748429,1.76426579 C15.0562947,1.44977644 15.0562947,0.931293993 14.748429,0.616804639 L14.7151463,0.58280579 C14.4072806,0.268316437 13.8997183,0.268316437 13.5918527,0.58280579 L7.4927844,6.82159458 L1.39371614,0.58280579 C1.08585049,0.268316437 0.578288191,0.268316437 0.270422535,0.58280579 L0.237139762,0.616804639 C-0.0790465872,0.931293993 -0.0790465872,1.44977644 0.237139762,1.76426579 L6.33620802,7.99455487 L0.237139762,14.224844 C-0.0707258938,14.5393333 -0.0707258938,15.0578158 0.237139762,15.3723051 L0.270422535,15.406304 C0.578288191,15.7207933 1.08585049,15.7207933 1.39371614,15.406304 L7.4927844,9.17601487 L13.5918527,15.406304 C13.8997183,15.7207933 14.4072806,15.7207933 14.7151463,15.406304 L14.748429,15.3723051 C15.0562947,15.0578158 15.0562947,14.5393333 14.748429,14.224844 L8.64936078,7.99455487 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

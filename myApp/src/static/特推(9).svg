@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="52px" viewBox="0 0 50 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>特推@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="79.2553691%" y1="9.06613372%" x2="20.0120915%" y2="87.6044695%" id="linearGradient-1">
+            <stop stop-color="#75AAFE" offset="0%"></stop>
+            <stop stop-color="#7680FF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="-9.23705556e-14" y="0" width="43" height="43" rx="21.5"></rect>
+        <filter x="-11.6%" y="-9.3%" width="123.3%" height="123.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.468993763   0 0 0 0 0.514983362   0 0 0 0 0.99787415  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" stop-opacity="0.375283062" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="60.7474178%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" stop-opacity="0.397644928" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <ellipse id="path-7" cx="42.9137931" cy="5.5" rx="9.5" ry="10.5"></ellipse>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="97.3469111%" id="linearGradient-9">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.673601676" offset="100%"></stop>
+        </linearGradient>
+        <path d="M25.8647917,9.59250438 L21.3531695,1.10776814 C21.1481976,0.722389202 20.74252,0.480820682 20.30022,0.480769231 L5.69992767,0.480769231 C5.25762771,0.480820692 4.85195005,0.722389211 4.64697818,1.10776814 L0.135355977,9.59250438 C-0.0923479145,10.0205339 -0.0286743725,10.5422147 0.295565888,10.905113 L12.1073343,24.1221332 C12.3329264,24.3745465 12.6581279,24.5192308 12.9998758,24.5192308 C13.3416237,24.5192308 13.6668252,24.3745465 13.8924173,24.1221332 L25.7041857,10.905113 C26.0285566,10.5423002 26.0923885,10.0206122 25.8647917,9.59250438 Z M20.8160999,10.1468727 L13.8819215,17.6988993 C13.6566977,17.9443102 13.3362583,18.0843854 13.0000738,18.0843854 C12.6638894,18.0843854 12.34345,17.9443102 12.1182262,17.6988993 L5.18365172,10.1468727 C4.74392384,9.66788517 4.78235928,8.92908517 5.26949967,8.49671668 C5.75664007,8.06434818 6.50801526,8.10214036 6.94774314,8.58112786 L13.0000738,15.1726 L19.0524045,8.58112786 C19.3351542,8.26484362 19.7691304,8.12264622 20.1883158,8.20893316 C20.6075012,8.29522011 20.9470266,8.59663842 21.0770067,8.99788072 C21.2069868,9.39912302 21.107307,9.83809671 20.8160999,10.1468727 Z" id="path-10"></path>
+        <filter x="-23.1%" y="-12.5%" width="146.2%" height="149.9%" filterUnits="objectBoundingBox" id="filter-11">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.356962398   0 0 0 0 0.439812826   0 0 0 0 0.936915391  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="小C老用户登陆首页" transform="translate(-340.000000, -284.000000)">
+            <g id="Group-31-Copy" transform="translate(25.000000, 289.000000)">
+                <g id="Group-7-Copy-3" transform="translate(316.000000, 0.000000)">
+                    <g id="首页分类icon">
+                        <g id="特推" transform="translate(2.000000, 0.000000)">
+                            <g id="Oval-4">
+                                <g id="Rectangle-15" transform="translate(0.586207, 0.000000)">
+                                    <mask id="mask-3" fill="white">
+                                        <use xlink:href="#path-2"></use>
+                                    </mask>
+                                    <g id="Mask">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                    </g>
+                                    <ellipse id="Oval-4" fill="url(#linearGradient-5)" mask="url(#mask-3)" cx="6.55770115" cy="37.225" rx="9.8697318" ry="10"></ellipse>
+                                    <mask id="mask-8" fill="white">
+                                        <use xlink:href="#path-7"></use>
+                                    </mask>
+                                    <use id="Oval-11" fill="url(#linearGradient-6)" xlink:href="#path-7"></use>
+                                </g>
+                            </g>
+                            <g id="钻石" transform="translate(9.500000, 11.500000)">
+                                <g id="形状">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
+                                    <use fill="url(#linearGradient-9)" fill-rule="evenodd" xlink:href="#path-10"></use>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

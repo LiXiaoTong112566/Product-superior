@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="33px" viewBox="0 0 80 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>即将开抢@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="4.35872396%" x2="0%" y2="94.140625%" id="linearGradient-1">
+            <stop stop-color="#33D3F3" offset="0%"></stop>
+            <stop stop-color="#52E2BF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="限时秒杀-明日开始" transform="translate(-318.000000, -473.000000)">
+            <g id="秒杀list" transform="translate(0.000000, 378.000000)">
+                <g transform="translate(0.000000, 0.907243)" id="商品列表list">
+                    <g>
+                        <g id="即将开抢" transform="translate(318.000000, 95.000000)">
+                            <rect id="Rectangle-37" fill="url(#linearGradient-1)" x="0" y="0" width="80" height="32" rx="5"></rect>
+                            <text font-family="PingFangSC-Medium, PingFang SC" font-size="16" font-weight="400" fill="#FFFFFF">
+                                <tspan x="8" y="22">即将开抢</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

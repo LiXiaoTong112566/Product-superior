@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="30px" viewBox="0 0 20 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>收藏未点击@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="商品详情页A1" transform="translate(-37.000000, -696.000000)">
+            <g id="Group-63" transform="translate(0.000000, 681.000000)">
+                <g id="收藏未点击" transform="translate(37.000000, 15.000000)">
+                    <text id="收藏" font-family="PingFangSC-Regular, PingFang SC" font-size="10" font-weight="normal" line-spacing="10" fill="#979797">
+                        <tspan x="0" y="31">收藏</tspan>
+                    </text>
+                    <path d="M9.48842664,11.7175145 C13.0441108,9.16531533 16.0929482,5.97493295 16.0929482,4.01473266 C16.0929482,2.30156168 14.6982506,0.907051813 12.9845638,0.907051813 C11.9992083,0.907051813 11.0586212,1.38779078 10.4722525,2.19184948 L9.49917145,3.52780498 L9.09505446,2.97264426 L8.52666405,2.19181088 C7.94089454,1.38743898 7.00116448,0.907051813 6.01508442,0.907051813 C4.18301114,0.907051813 2.90705181,1.73097162 2.90705181,4.01473266 C2.90705181,6.08617249 5.93833629,9.24633805 9.48842664,11.7175145 Z" id="Fill-20" stroke="#979797"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

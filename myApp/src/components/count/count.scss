@@ -1,0 +1,110 @@
+.addCountBox{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index:9;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: absolute;
+    top:0;
+    left:0;
+     //display: none;
+     .box{
+        width: 100%;
+        height: 630rpx;
+        background: #fff;
+        z-index:9;
+       
+        box-sizing: border-box;
+        position: absolute;
+        bottom:0;
+        left:0;
+        
+
+     }
+
+    .title{
+        width: 100%;
+        height: 60rpx;
+        line-height: 60rpx;
+        display: flex;
+        justify-content: space-between;
+        Text{
+            padding:0 10rpx;
+
+        }
+
+    }
+
+    .num{
+        font-size:26rpx;
+        padding-left:10rpx;
+    }
+
+    .article{
+        width: 100%;
+        height: 200rpx;
+        display: flex;
+        margin:30rpx 0;
+        .articleLeft{
+            width:200rpx;
+            height: 200rpx;
+            background: #ccc;
+            margin-right:30rpx;
+            margin-left:10rpx;
+        }
+        .price{
+            margin:60rpx 0;
+        }
+
+        }
+    }
+
+    .countBox{
+        width: 100%;
+        display: flex;
+        margin:20rpx 0;
+        Text{
+            padding:6rpx 6rpx;
+           border:1px solid #ccc;
+            margin:0 20rpx;
+            border-radius: 20%;
+
+        }
+
+        .active{
+            background:skyblue;
+            color:#fff;
+
+        }
+    }
+
+    .changeCount{
+        width: 100%;
+        height: 60rpx;
+        display: flex;
+        line-height: 20rpx;
+        justify-content: space-between;
+        
+        .num{
+            font-size:26rpx;
+            padding-left:10rpx;
+            padding:0 20rpx;
+            border:none;
+        }
+
+        Text{
+            width: 60rpx;
+            height: 40rpx;
+            line-height: 40rpx;
+            text-align: center;
+            border:1px solid #ccc;
+            padding:0 20rpx;
+        }
+    }
+
+    .btn{
+        background: lightcoral;
+    }
+
+

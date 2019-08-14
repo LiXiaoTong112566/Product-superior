@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="52px" viewBox="0 0 50 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>特推@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="79.2553691%" y1="9.06613372%" x2="20.0120915%" y2="87.6044695%" id="linearGradient-1">
+            <stop stop-color="#FFB848" offset="0%"></stop>
+            <stop stop-color="#FF7737" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="-9.23705556e-14" y="0" width="43" height="43" rx="21.5"></rect>
+        <filter x="-11.6%" y="-9.3%" width="123.3%" height="123.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.996078431   0 0 0 0 0.564705882   0 0 0 0 0.325490196  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" stop-opacity="0.375283062" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="60.7474178%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" stop-opacity="0.397644928" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <ellipse id="path-7" cx="42.9137931" cy="5.5" rx="9.5" ry="10.5"></ellipse>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="97.3469111%" id="linearGradient-9">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.673601676" offset="100%"></stop>
+        </linearGradient>
+        <path d="M32.9145627,34.8571529 C26.6447491,34.884797 25.7011266,30.0256716 22.2116557,30.0410569 C18.7221848,30.0564422 16.2069583,35.4913354 11.9082357,34.9497713 C11.923922,30.4770929 11.9351387,27.9330807 11.9418859,27.3177346 L12.0816644,14.5698847 C12.1020883,12.7072163 13.6286362,11.1806684 15.4913046,11.1602445 L29.7528244,11.0255054 C31.6154928,11.0050815 33.1089271,12.4985157 33.0885032,14.3611841 L32.9487247,27.109034 C32.9419775,27.7243801 32.9305902,30.3070864 32.9145627,34.8571529 Z M22.3874881,25.7113962 L24.3980146,26.6749717 C24.5633939,26.7542323 24.7481798,26.7839306 24.9300663,26.7604818 C25.4504303,26.6933963 25.8178852,26.2171745 25.7507998,25.6968105 L25.4621391,23.4577457 L27.0071764,21.8100432 C27.1307832,21.6782229 27.214229,21.5138825 27.2477223,21.3363059 C27.3449672,20.8207261 27.0058398,20.3239334 26.4902599,20.2266885 L24.2877269,19.8112626 L23.2233292,17.840876 C23.1353841,17.6780741 23.0018091,17.5444992 22.8390073,17.4565541 C22.377385,17.2071869 21.8010141,17.3792537 21.5516469,17.840876 L20.4872492,19.8112626 L18.2847162,20.2266885 C18.1071396,20.2601817 17.9427992,20.3436275 17.8109789,20.4672344 C17.4282489,20.8261172 17.4089169,21.4273132 17.7677997,21.8100432 L19.312837,23.4577457 L19.0241763,25.6968105 C19.0007275,25.878697 19.0304258,26.0634829 19.1096864,26.2288622 C19.336445,26.7020003 19.9038235,26.9017303 20.3769616,26.6749717 L22.3874881,25.7113962 Z" id="path-10"></path>
+        <filter x="-29.0%" y="-12.4%" width="158.0%" height="149.8%" filterUnits="objectBoundingBox" id="filter-11">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.415686275   0 0 0 0 0.101960784  0 0 0 0.6 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="小C首页-" transform="translate(-24.000000, -284.000000)">
+            <g id="Group-31-Copy" transform="translate(25.000000, 289.000000)">
+                <g id="Group-7-Copy-5">
+                    <g id="首页分类icon">
+                        <g id="特推" transform="translate(2.000000, 0.000000)">
+                            <g id="Oval-4">
+                                <g id="Rectangle-15" transform="translate(0.586207, 0.000000)">
+                                    <mask id="mask-3" fill="white">
+                                        <use xlink:href="#path-2"></use>
+                                    </mask>
+                                    <g id="Mask">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                    </g>
+                                    <ellipse id="Oval-4" fill="url(#linearGradient-5)" mask="url(#mask-3)" cx="6.55770115" cy="37.225" rx="9.8697318" ry="10"></ellipse>
+                                    <mask id="mask-8" fill="white">
+                                        <use xlink:href="#path-7"></use>
+                                    </mask>
+                                    <use id="Oval-11" fill="url(#linearGradient-6)" xlink:href="#path-7"></use>
+                                </g>
+                            </g>
+                            <g id="合并形状" transform="translate(22.500000, 23.000000) rotate(-360.000000) translate(-22.500000, -23.000000) ">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
+                                <use fill="url(#linearGradient-9)" fill-rule="evenodd" xlink:href="#path-10"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
