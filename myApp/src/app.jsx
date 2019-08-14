@@ -41,7 +41,7 @@ class App extends Component {
       }
     },
     tabBar: {
-      selectedColor: "0ff",
+      selectedColor: "#56d2bf",
       list: [{
         pagePath: "pages/index/index",
         text: "首页"
