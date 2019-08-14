@@ -16,6 +16,7 @@ class Index extends Component {
 
   componentWillReact () {
     console.log('componentWillReact')
+    console.log('bjkjknknk')
   }
 
   componentDidMount () { }
