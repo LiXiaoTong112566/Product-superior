@@ -19,11 +19,12 @@ class App extends Component {
   componentDidMount() { }
   config = {
     pages: [
+      'pages/commodityDetails/commodityDetail',
       'pages/indexList/indexList',
       'pages/delivery/index',
       'pages/index/index',
       'pages/mine/mine',
-      'pages/commodityDetails/commodityDetail',
+    
       'pages/shoppingCar/shoppingCar',
       'pages/special/special',
       "pages/search/search"
