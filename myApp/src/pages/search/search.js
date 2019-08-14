@@ -29,9 +29,10 @@ class Search extends Component {
 
   componentDidHide() { }
 
-  increment = () => {
-    // const { counterStore } = this.props
-    // counterStore.increment()
+  // 删除历史记录
+  delHistory=()=>{
+     console.log("del")
+     
   }
 
   render() {
@@ -44,7 +45,7 @@ class Search extends Component {
           </View>
           <View className="history_search">
               <Text>历史搜索</Text>
-              <Image className="delete" src={del}></Image>
+              <Image className="delete" src={del} onClick={()=>this.delHistory()}></Image>
           </View>
           {/* 历史记录 */}
           <View className="record">
