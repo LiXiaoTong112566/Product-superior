@@ -18,8 +18,11 @@ class App extends Component {
   config = {
     pages: [
       'pages/index/index',
+      'pages/indexList/indexList',
+      'pages/delivery/index',
+      'pages/shoppingCar/shoppingCar',
       'pages/mine/mine',
-      'pages/shoppingCar/shoppingCar'
+      'pages/myorder/myorder'
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -27,16 +30,21 @@ class App extends Component {
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
     },
+    permission: {
+      'scope.userLocation': {
+        desc: '你的位置信息将用于小程序位置接口的效果展示'
+      }
+    },
     tabBar: {
       selectedColor: "#56d2bf",
       list: [{
         pagePath: "pages/index/index",
         text: "首页"
       }, {
-        pagePath: "pages/mine/mine",
+        pagePath: "pages/shoppingCar/shoppingCar",
         text: "购物车"
       }, {
-        pagePath: "pages/shoppingCar/shoppingCar",
+        pagePath: "pages/mine/mine",
         text: "我的"
       }]
     },
