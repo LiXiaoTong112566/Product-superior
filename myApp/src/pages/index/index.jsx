@@ -134,7 +134,7 @@ class Index extends Component {
           }
         </Swiper>
         <View className={style.section}>
-            <View className={style.}>
+            <View className>
 
             </View>
         </View>
