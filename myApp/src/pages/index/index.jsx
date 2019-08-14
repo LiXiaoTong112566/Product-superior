@@ -3,7 +3,10 @@ import { View, Button, Text, ScrollView, Image, Swiper, SwiperItem } from '@taro
 import { observer, inject } from '@tarojs/mobx'
 
 import style from './index.module.scss'
+<<<<<<< HEAD
 import search from '../../static/images/search.png'
+=======
+>>>>>>> hmm
 
 @inject('home')
 @observer
@@ -59,6 +62,7 @@ class Index extends Component {
     // const { counterStore: { counter } } = this.props
     return (
       <View className={style.index}>
+<<<<<<< HEAD
         <Image src={search} className={style.search} />
         {/* 头部nav */}
         <ScrollView
@@ -97,6 +101,10 @@ class Index extends Component {
         <View className={style['s-nav']}>
             
         </View>
+=======
+        {/* <Button onClick={this.increment}>+</Button>
+        <Text>{counter}</Text> */}
+>>>>>>> hmm
       </View>
     )
   }

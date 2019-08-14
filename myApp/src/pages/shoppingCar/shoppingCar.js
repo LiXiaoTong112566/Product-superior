@@ -2,10 +2,12 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Button, Text } from '@tarojs/components'
 import { observer, inject } from '@tarojs/mobx'
 
-import style from './mine.module.scss'
+import style from './shoppingCar.module.scss'
 
 
-class Mine extends Component {
+@inject('counterStore')
+@observer
+class ShoppingCar extends Component {
   componentWillMount() { }
   componentDidMount() { }
   componentWillUnmount() { }
@@ -22,21 +24,14 @@ class Mine extends Component {
 
   componentDidHide() { }
 
- 
-
-
 
   render() {
     return (
-<<<<<<< HEAD
-      <View className={style.mine}>
-=======
-      <View className={style.minewrap}>
->>>>>>> hmm
-        
+      <View className={style.shoppingcarwrap}>
+       
       </View>
     )
   }
 }
 
-export default Mine 
+export default ShoppingCar 

@@ -22,7 +22,14 @@ class App extends Component {
       'pages/shoppingCar/shoppingCar',
       'pages/index/index',
       'pages/mine/mine',
+<<<<<<< HEAD
      
+=======
+      'pages/shoppingCar/shoppingCar',
+      'pages/special/special',
+      "pages/search/search"
+
+>>>>>>> hmm
     ],
     window: {
       backgroundTextStyle: 'light',
