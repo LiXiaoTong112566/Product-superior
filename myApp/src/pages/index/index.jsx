@@ -41,7 +41,6 @@ class Index extends Component {
       },
       method: 'POST',
       success: (res) => {
-        // console.log(res.data.result)
         this.setState({
           sectionList: res.data.result
         })
@@ -67,20 +66,6 @@ class Index extends Component {
   }
   componentWillUnmount() { }
 
-  // request(url,method){
-  //   Taro.request({
-  //     url: url,
-  //     header: {
-  //       'content-type': 'application/json',
-  //     },
-  //     method: method,
-  //     success: (res) => {
-  //       this.setState({
-  //         navlist: res.data.result
-  //       })
-  //     }
-  //   })
-  // }
   config = {
     navigationBarTitleText: '首页',
     navigationBarBackgroundColor: '#fff'
@@ -95,15 +80,9 @@ class Index extends Component {
   componentWillReact() {
     console.log('componentWillReact')
   }
-
   componentDidShow() { }
-
   componentDidHide() { }
-
-  increment = () => {
-  
-  }
-
+  increment = () => {}
   SwiperItem(id){
     Taro.navigateTo({
       url:`/pages/special/special?id=${id}`
@@ -149,11 +128,12 @@ class Index extends Component {
             })
           }
         </Swiper>
+        {/* 会员专区 */}
         <View className={style.section}>
           <View className={style.sNav}>
             {
-              this.state.sectionList[1].items.map((item) => {
-                return <View key={item.contentValue} className={style.contentValue}>
+              this.state.sectionList[1]&&this.state.sectionList[1].items.map((item) => {
+                return <View key={item.contentValue} className={style.contentValue}  onClick={this.SwiperItem.bind(this,item.contentValue)}>
                   <View className={style.sNavimgWrap}>
                     <Image src={item.imgUrl} className={style.sNavimg}></Image>
                   </View>
@@ -162,16 +142,19 @@ class Index extends Component {
               })
             }
           </View>
+          {/* 今日爆品 */}
           <Image className={style.bigbanner} src={this.state.sectionList[2] && this.state.sectionList[2].pictUrl} ></Image>
+          {/* 月饼盒 */}
           <Image className={style.bigbanner} src={this.state.sectionList[4] && this.state.sectionList[4].pictUrl} ></Image>
           <View className={style.jingxuan}>
             <View className={style.jingxuanTop}>
               <View className={style.jx}>精选好物 | 等你来抢</View>
               <View className={style.more}>更多&gt;</View>
             </View>
+           {/* 月饼盒的列表 */}
             <View className={style.jingxuancon}>
               {
-                this.state.sectionList[5].items.map((item, i) => {
+                this.state.sectionList[5]&&this.state.sectionList[5].items.map((item, i) => {
                   return <View className={style.jingxuanItem} key={i}>
                     <View className={style.jingxuanimgbox}>
                       <Image src={item.imgUrl} className={style.jingxuanimg}></Image>
@@ -183,15 +166,17 @@ class Index extends Component {
               }
             </View>
           </View>
-          <Image className={style.bigbanner} src={this.state.sectionList[6] && this.state.sectionList[6].pictUrl} ></Image>
+          {/* 电器 */}
+          <Image className={style.bigbanner} src={this.state.sectionList[6] && this.state.sectionList[6].pictUrl}  onClick={this.SwiperItem.bind(this,226)}></Image>
           <View className={style.jingxuan}>
             <View className={style.jingxuanTop}>
               <View className={style.jx}>精选好物 | 等你来抢</View>
               <View className={style.more}>更多&gt;</View>
             </View>
+            {/* 电器的列表 */}
             <View className={style.jingxuancon}>
               {
-                this.state.sectionList[7].items.map((item, i) => {
+                this.state.sectionList[7]&&this.state.sectionList[7].items.map((item, i) => {
                   return <View className={style.jingxuanItem} key={i}>
                     <View className={style.jingxuanimgbox}>
                       <Image src={item.imgUrl} className={style.jingxuanimg}></Image>
@@ -203,15 +188,17 @@ class Index extends Component {
               }
             </View>
           </View>
-          <Image className={style.bigbanner} src={this.state.sectionList[8] && this.state.sectionList[8].pictUrl} ></Image>
+          {/* 进口 */}
+          <Image className={style.bigbanner} src={this.state.sectionList[8] && this.state.sectionList[8].pictUrl} onClick={this.SwiperItem.bind(this,223)}></Image>
           <View className={style.jingxuan}>
             <View className={style.jingxuanTop}>
               <View className={style.jx}>精选好物 | 等你来抢</View>
               <View className={style.more}>更多&gt;</View>
             </View>
+            {/* 进口列表 */}
             <View className={style.jingxuancon}>
               {
-                this.state.sectionList[9].items.map((item, i) => {
+                this.state.sectionList[9]&&this.state.sectionList[9].items.map((item, i) => {
                   return <View className={style.jingxuanItem} key={i}>
                     <View className={style.jingxuanimgbox}>
                       <Image src={item.imgUrl} className={style.jingxuanimg}></Image>
@@ -223,15 +210,17 @@ class Index extends Component {
               }
             </View>
           </View>
-          <Image className={style.bigbanner} src={this.state.sectionList[10] && this.state.sectionList[10].pictUrl} ></Image>
+          {/* 小孩汽车 */}
+          <Image className={style.bigbanner} src={this.state.sectionList[10] && this.state.sectionList[10].pictUrl} onClick={this.SwiperItem.bind(this,224)}></Image>
           <View className={style.jingxuan}>
             <View className={style.jingxuanTop}>
               <View className={style.jx}>精选好物 | 等你来抢</View>
               <View className={style.more}>更多&gt;</View>
             </View>
+            {/* 小孩汽车的列表 */}
             <View className={style.jingxuancon}>
               {
-                this.state.sectionList[11].items.map((item, i) => {
+                this.state.sectionList[11]&&this.state.sectionList[11].items.map((item, i) => {
                   return <View className={style.jingxuanItem} key={i}>
                     <View className={style.jingxuanimgbox}>
                       <Image src={item.imgUrl} className={style.jingxuanimg}></Image>
@@ -243,15 +232,17 @@ class Index extends Component {
               }
             </View>
           </View>
-          <Image className={style.bigbanner} src={this.state.sectionList[12] && this.state.sectionList[12].pictUrl} ></Image>
+          {/* 女性脸部用品 */}
+          <Image className={style.bigbanner} src={this.state.sectionList[12] && this.state.sectionList[12].pictUrl} onClick={this.SwiperItem.bind(this,225)}></Image>
           <View className={style.jingxuan}>
             <View className={style.jingxuanTop}>
               <View className={style.jx}>精选好物 | 等你来抢</View>
               <View className={style.more}>更多&gt;</View>
             </View>
+            {/* 女性脸部用品的列表 */}
             <View className={style.jingxuancon}>
               {
-                this.state.sectionList[13].items.map((item, i) => {
+                this.state.sectionList[13]&&this.state.sectionList[13].items.map((item, i) => {
                   return <View className={style.jingxuanItem} key={i}>
                     <View className={style.jingxuanimgbox}>
                       <Image src={item.imgUrl} className={style.jingxuanimg}></Image>
