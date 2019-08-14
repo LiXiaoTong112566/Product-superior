@@ -10,20 +10,15 @@ console.log("购物",Purchase)
 @inject('detail')
 @observer
 class CommodityDetail extends Component {
-
   componentWillMount() { }
   componentDidMount() {
-    
     this.props.detail.getProductDetail({ pid: 549 });
     console.log(this.props);
-
   }
 
   shopFn(){
     this.props.detail.showShop();
   }
-  
-
 //数量的弹窗的显示
 showCountFn(){
   this.props.detail.showCount();

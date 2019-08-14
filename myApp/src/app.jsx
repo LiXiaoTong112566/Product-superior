@@ -1,5 +1,9 @@
 import Taro, { Component } from '@tarojs/taro'
 import { Provider } from '@tarojs/mobx'
+import Index from './pages/index'
+
+import store from './store'
+
 import './app.scss'
 import Index from './pages/commodityDetails/commodityDetail'
 import store from "./store";
@@ -15,12 +19,16 @@ class App extends Component {
   componentDidMount() { }
   config = {
     pages: [
+      'pages/indexList/indexList',
+      'pages/delivery/index',
+      'pages/shoppingCar/shoppingCar',
       'pages/index/index',
       'pages/mine/mine',
       'pages/shoppingCar/shoppingCar',
       'pages/commodityDetails/commodityDetail',
 
 
+     
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -28,16 +36,22 @@ class App extends Component {
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
     },
+    permission: {
+      'scope.userLocation': {
+        desc: '你的位置信息将用于小程序位置接口的效果展示'
+      }
+    },
     tabBar: {
-      "list": [{
-        "pagePath": "pages/index/index",
-        "text": "首页"
+      selectedColor: "0ff",
+      list: [{
+        pagePath: "pages/index/index",
+        text: "首页"
       }, {
-          "pagePath": "pages/mine/mine",
-        "text": "购物车"
+        pagePath: "pages/shoppingCar/shoppingCar",
+        text: "购物车"
       }, {
-          "pagePath": "pages/shoppingCar/shoppingCar",
-        "text": "我的"
+        pagePath: "pages/mine/mine",
+        text: "我的"
       }]
     },
   }
