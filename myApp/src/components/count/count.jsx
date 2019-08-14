@@ -96,10 +96,8 @@ class Count extends Component {
         let sum={sum:this.state.sum};
         let newData=Object.assign({},skuQueryData,sum);
         checkedData.push(newData);
-      this.props.detail.changeColor(skuQueryData.skuName);
-      this.props.detail.showCount();
-       
-        
+        this.props.detail.changeColor(skuQueryData.skuName);
+        this.props.detail.showCount();
       
      }
 

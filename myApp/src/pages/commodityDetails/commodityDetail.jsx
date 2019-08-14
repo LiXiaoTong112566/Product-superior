@@ -12,6 +12,7 @@ import vipImage from "../../static/images/黑卡@2x.png";
 class CommodityDetail extends Component {
   componentWillMount() { }
   componentDidMount() {
+    console.log(this.$router.params.id)
     this.props.detail.getProductDetail({ pid: 549 });
     this.props.detail.getdetailPicture({pid:549,basePid:549,userIdentity: 2});
     console.log(this.props);

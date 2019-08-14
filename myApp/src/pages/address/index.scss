@@ -1,0 +1,91 @@
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: rgb(244, 251, 252);
+}
+.main {
+    background: #fff;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+}
+.name , .phone , .region {
+    width: 100%;
+    height: 88rpx;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input {
+        width: 100%;
+        height: 100%;
+    }
+    Image {
+        width: 22rpx;
+        height: 22rpx;
+    }
+}
+.detailedness {
+    width: 100%;
+    height: 192rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    textarea {
+        width: 90%;
+        height: 100%;
+        margin-top: 60rpx;
+    }
+}
+.conter {
+    width: 100%;
+    height: 300rpx;
+    background: #fff;
+    margin-top: 40rpx;
+    box-sizing: border-box;
+    padding: 20rpx 30rpx;
+    .conter_cont {
+        display: flex;
+        padding: 30rpx 0;
+        box-sizing: border-box;
+        border-bottom: 1px solid #eee;
+        .cont_all {
+            padding: 10rpx 30rpx;
+            background: rgb(44, 243, 177);
+            border-radius: 50rpx;
+            color: #fff;
+            margin-right: 20rpx;
+        }
+    }
+    .conter_footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.footer_bt {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50rpx;
+    .delete {
+        padding: 30rpx 50rpx;
+        border: 1px solid rgb(63, 245, 145);
+        color: rgb(63, 245, 145);
+        border-radius: 10rpx;
+    }
+    .save {
+        padding: 30rpx 50rpx;
+        background: rgb(44, 243, 177);
+        color: #fff;
+        border-radius: 10rpx;
+    }
+}
+.picker {
+    width: 100%;
+    height: 100%;
+    line-height: 88rpx;
+}
