@@ -13,10 +13,8 @@ class Index extends Component {
     super(props)
     this.state = {
         value: false,
-        selector: ['美国', '中国', '巴西', '日本'],
+        selector: ['美国', '中国', '巴西'],
         selectorChecked: '美国',
-        timeSel: '12:01',
-        dateSel: '2018-04-22'
     }
   }
   config = {
@@ -26,11 +24,11 @@ class Index extends Component {
   componentWillMount () { }
 
   componentWillReact () {
-    
+     
   }
 
   componentDidMount () { 
-     console.log(this.props.city.getCity(),'333333')
+    //  console.log(this.props.city.getCity(),'333333')
    }
 
   componentWillUnmount () { }
