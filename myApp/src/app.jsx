@@ -5,8 +5,8 @@ import Index from './pages/index'
 import store from './store'
 
 import './app.scss'
-import Index from './pages/commodityDetails/commodityDetail'
-import store from "./store";
+//import Index from './pages/commodityDetails/commodityDetail'
+//import store from "./store";
 
 // 如果需要在 h5 环境中开启 React Devtools
 // 取消以下注释：
@@ -21,7 +21,6 @@ class App extends Component {
     pages: [
       'pages/indexList/indexList',
       'pages/delivery/index',
-      'pages/shoppingCar/shoppingCar',
       'pages/index/index',
       'pages/mine/mine',
       'pages/commodityDetails/commodityDetail',

@@ -1,3 +1,10 @@
+/*
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-08-14 08:51:54
+ * @LastEditTime: 2019-08-14 10:00:50
+ * @LastEditors: Please set LastEditors
+ */
 var Fly=require("flyio/dist/npm/wx") 
 var fly=new Fly;
 
