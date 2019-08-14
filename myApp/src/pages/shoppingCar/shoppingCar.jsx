@@ -38,7 +38,6 @@ class Index extends Component {
       }))
   }
   render () {
-      console.log(this.state)
     return (
       <View className='wrap'>
           <View className='main'>

@@ -26,7 +26,8 @@ class App extends Component {
       'pages/mine/mine',
       'pages/shoppingCar/shoppingCar',
       'pages/special/special',
-      "pages/search/search"
+      "pages/search/search",
+      "pages/phone/phone"
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -41,7 +42,6 @@ class App extends Component {
     },
     tabBar: {
       selectedColor: "#56d2bf",
-      
       list: [{
         pagePath: "pages/index/index",
         iconPath:"static/images/shouye.png",
