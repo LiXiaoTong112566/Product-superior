@@ -5,8 +5,8 @@ import { observer, inject } from '@tarojs/mobx'
 import './special.scss'
 
 
-@inject('counterStore')
-@observer
+//@inject('counterStore')
+//@observer
 class Special extends Component {
     constructor(){
         super()

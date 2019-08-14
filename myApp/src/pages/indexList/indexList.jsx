@@ -61,13 +61,13 @@ class IndexList extends Component {
 
 
   render() {
-    console.log(this.state.indexLIstData,'xasdddddddddddd')
+   // console.log(this.state.indexLIstData,'xasdddddddddddd')
     return (
       <View className={style.index}>
         <ScrollView className={style.top} scrollX="true">
           {
             this.state.indexLIstData&&this.state.indexLIstData.map((item,index)=>{
-              return  <View className={style.li} onClick={this.topList.bind(this,item.cid,index)}>{item.cname}</View>
+              return  <View className={style.li} onClick={this.topList.bind(this,item.cid,index)} key={index}>{item.cname}</View>
             
             })
           }
@@ -126,7 +126,7 @@ class IndexList extends Component {
       },
       method:'POST',
       success:(res)=>{
-        console.log(res.data.result,'res++++++++++++++++++++++++++++++++++++++++++')
+        //console.log(res.data.result,'res++++++++++++++++++++++++++++++++++++++++++')
         this.setState({
           indexBotData:res.data.result,
           childs:this.state.indexLIstData[index]

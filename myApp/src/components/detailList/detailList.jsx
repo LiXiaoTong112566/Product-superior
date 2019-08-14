@@ -40,7 +40,7 @@ class DetailList extends Component {
                 {
                     this.props.data && this.props.data.map((item, index) => {
                         return (
-                            <View class="dl">
+                            <View class="dl" key={index}>
                                 <View class="dt">
                                     <Image src={item.mainImgUrl} class="image"></Image>
                                 </View>
