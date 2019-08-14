@@ -24,7 +24,6 @@ class App extends Component {
       'pages/delivery/index',
       'pages/index/index',
       'pages/mine/mine',
-    
       'pages/shoppingCar/shoppingCar',
       'pages/special/special',
       "pages/search/search"
