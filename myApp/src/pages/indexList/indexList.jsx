@@ -1,6 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Button, Text, ScrollView, Image,Label  } from '@tarojs/components'
-import { observer, inject } from '@tarojs/mobx'
+//import { observer, inject } from '@tarojs/mobx'
 import style from './indexList.module.scss';
 //列表组件
 import DetailList from "../../components/detailList/detailList"
