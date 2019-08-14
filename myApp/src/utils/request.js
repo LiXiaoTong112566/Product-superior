@@ -2,7 +2,7 @@ var Fly=require("flyio/dist/npm/wx")
 var fly=new Fly;
 
 fly.config.headers={
-    "content-type":"application/x-www-from-urlencoded"
+    "content-type": "application/x-www-form-urlencoded",
 }
 
 //定义公共headers

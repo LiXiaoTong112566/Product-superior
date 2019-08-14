@@ -6,8 +6,8 @@ import './search.scss'
 import search from "../../static/seek/search.png"
 import del from "../../static/seek/del.png"
 
-@inject('counterStore')
-@observer
+// @inject('counterStore')
+// @observer
 class Search extends Component {
   componentWillMount() { 
    

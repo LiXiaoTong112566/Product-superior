@@ -6,18 +6,15 @@
  * @LastEditors: Please set LastEditors
  */
 import DetailModule from './module/detail';
-// 引入模块
-import Home from './home'
-import IndexList from "./indexList"
-
+import IndexList  from "./module/indexList"
+import Home from "./module/home"
 //获取到的商品详情
-const detail =new DetailModule();
-// 实例化模块
-const home = new Home()
-const indexList = new IndexList()
+let detail =new DetailModule();
+let indexList = new IndexList()
+let home = new Home()
 //登录
 export default {
-  home,
   indexList,
   detail,
+  home
 };

@@ -2,12 +2,9 @@ import Taro, { Component } from '@tarojs/taro'
 import { Provider } from '@tarojs/mobx'
 import Index from './pages/index'
 
-import store from './store'
-
+import store from './store/index'
 import './app.scss'
-import Index from './pages/commodityDetails/commodityDetail'
-import store from "./store";
-
+// import Detail from './pages/commodityDetails/commodityDetail'
 // 如果需要在 h5 环境中开启 React Devtools
 // 取消以下注释：
 // if (process.env.NODE_ENV !== 'production' && process.env.TARO_ENV === 'h5')  {
@@ -19,15 +16,18 @@ class App extends Component {
   componentDidMount() { }
   config = {
     pages: [
+     
+      "pages/address/index",
       'pages/indexList/indexList',
       'pages/delivery/index',
-      'pages/shoppingCar/shoppingCar',
       'pages/index/index',
       'pages/mine/mine',
       'pages/commodityDetails/commodityDetail',
       'pages/shoppingCar/shoppingCar',
       'pages/special/special',
-      "pages/search/search"
+      "pages/search/search",
+      "pages/binding/binding",
+   
     ],
     window: {
       backgroundTextStyle: 'light',

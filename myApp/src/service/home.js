@@ -8,7 +8,6 @@
 import fly from "../utils/request";
 
 //获取商品详情
-export let getInfo = params => {
-  console.log("获取到的参数",params);
-    return fly.post('/api/open/product/info/1.0.0', params);
+export let sepcialInfo = params => {
+    return fly.post('/api/open/sepcial/query/1.0.0', params);
   }
