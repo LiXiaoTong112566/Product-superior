@@ -33,6 +33,7 @@
   flex:1;
   padding: 20px;
   box-sizing: border-box;
+  overflow: auto;
 }
 .conitem{
   width: 100%;
@@ -43,8 +44,29 @@
   border-radius: 10px;
   flex-direction: column;
 }
-.time{
-  width: 100%;
+.conitemtop{
+  width:100%;
   display: flex;
   justify-content: space-between;
+}
+.time{
+  font-size: 24px;
+  color: rgb(75, 75, 75)
+}
+.status{
+  font-size: 28px;
+}
+.info{
+  width: 100%;
+  margin-top:10px;
+  display: flex;
+}
+.img{
+  width: 50%;
+  height: 130px;
+  margin: 30px;
+}
+.infocon{
+  display: flex;
+  flex-direction: column;
 }
