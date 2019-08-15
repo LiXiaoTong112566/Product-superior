@@ -124,16 +124,12 @@ class Special extends Component {
                                         )
                                     })
                                 }
-                           
-    
-    
-    
+                
                             </View>
                         </View>
                            )
                        })
                    }
-                    
                 </View>
             </ScrollView>
         )
