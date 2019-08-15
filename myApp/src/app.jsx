@@ -9,18 +9,29 @@ class App extends Component {
   componentDidMount() { }
   config = {
     pages: [
+      //首页
       'pages/index/index',
+      //编辑收货地址
       "pages/address/index",
+      //购物车
       'pages/shoppingCar/shoppingCar',
+      // 我的
       'pages/mine/mine',
+      // 我的订单
       'pages/myOrder/myorder',
+      // 商品详情
       'pages/commodityDetails/commodityDetail',
       'pages/indexList/indexList',
+      //收货地址
       'pages/delivery/index',
-      "pages/binding/binding",
+      // 专题
       'pages/special/special',
+      //搜索
       "pages/search/search",
-      "pages/phone/phone"
+      //手机号
+      "pages/phone/phone",
+      //分享合成canvas
+      "pages/share/share"
     ],
     window: {
       backgroundTextStyle: 'light',
