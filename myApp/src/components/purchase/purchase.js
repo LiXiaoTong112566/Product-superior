@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-13 20:26:30
- * @LastEditTime: 2019-08-15 09:27:02
+ * @LastEditTime: 2019-08-15 20:13:53
  * @LastEditors: Please set LastEditors
  */
 import Taro, { Component } from "@tarojs/taro";
@@ -12,14 +12,18 @@ import "./purchase.scss";
 
 import regeneratorRuntime from "../../utils/runtime";
 console.log(regeneratorRuntime);
-@inject('detail')
+@inject("detail")
 @observer
-
 class Purchase extends Component {
-  componentWillMount() {}
-  componentDidMount() {
-    this.props.detail.getskuQuery({ pid: 549, vids: "[5832]" });
+
+  constructor(){
+    super();
+    this.state={
+      sum:1,
+    }
   }
+  componentWillMount() {}
+  componentDidMount() {}
   componentWillUnmount() {}
 
   config = {
@@ -38,15 +42,16 @@ class Purchase extends Component {
 
   //改变选中的颜色
   async changeColor(data) {
-    console.log("change", JSON.parse(data));
-    let vids = JSON.parse(data)[0].valueVo.vid;
-    console.log("changeaaaaaa", vids);
+    console.log("change113", data);
+    let vids = JSON.parse(data.attributeValueJson)[0].valueVo.vid;
     let result = await this.props.detail.getskuQuery({
-      pid: 549,
+      pid: data.pid,
       vids: `[${vids}]`
     });
-    console.log("改变选中的颜色", result);
+    console.log("获取到的数据result", result);
+    
   }
+
   //改变数量
   changeCount(type) {
     console.log("type");
@@ -90,9 +95,13 @@ class Purchase extends Component {
         <View className="box">
           <View className="title">
             <View className="colorSize">颜色,尺码</View>
-            <View className="close" onClick={()=>this.props.detail.showShop()}>X</View>
+            <View
+              className="close"
+              onClick={() => this.props.detail.showShop()}
+            >
+              X
+            </View>
           </View>
-
           {/* 商品 */}
           <View className="commodity">
             <View className="commodityLeft">
@@ -105,7 +114,6 @@ class Purchase extends Component {
               <View className="price">库存:{skuQueryData.store}</View>
             </View>
           </View>
-
           {/* 颜色的盒子 */}
           <Text className="headline">颜色</Text>
           <View className="colorList">
@@ -119,26 +127,21 @@ class Purchase extends Component {
                         ? "color active"
                         : "color"
                     }
-                    onClick={() => this.changeColor(item.attributeValueJson)}
+                    onClick={() => this.changeColor(item)}
                   >
                     {item.skuName}
                   </Text>
                 );
               })}
-
-            {/* <Text className="color active">灰色</Text>
-            <Text className="color">黑色</Text>
-            <Text className="color">蓝色</Text> */}
           </View>
-
-          <Text className="headline">尺码</Text>
+          {/* <Text className="headline">尺码</Text>
           {/* 尺码 */}
-          <View className="sizeList">
+          {/* <View className="sizeList">
             <Text className="size active">L(170/92A)</Text>
             <Text className="size">L(170/92A)</Text>
             <Text className="size">L(170/92A)</Text>
-          </View>
-
+          </View> */}
+          
           {/* 数量 */}
           <View className="numBox">
             <Text>数量</Text>
@@ -152,8 +155,9 @@ class Purchase extends Component {
               </Text>
             </View>
           </View>
-
-          <Button className="btn" onClick={()=>this.props.detail.showShop()}>确定</Button>
+          <Button className="btn" onClick={() => this.props.detail.showShop()}>
+            确定
+          </Button>
         </View>
       </View>
     );
