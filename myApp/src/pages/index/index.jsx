@@ -56,7 +56,7 @@ class Index extends Component {
       },
       method: 'POST',
       success: (res) => {
-        console.log(res.data.result)
+       // console.log(res.data.result)
         this.setState({
           footerList: res.data.result
         })
@@ -99,14 +99,17 @@ class Index extends Component {
     // })
   }
 
-
+  goSearch=()=>{
+     wx.navigateTo({url:"/pages/search/search"})
+  }
 
   render() {
     let stateData5=this.state.sectionList[5];
     console.log(stateData5)
     return (
       <View className={style.index}>
-        <Image src={search} className={style.search} />
+        <Image src={search} className={style.search} onClick={()=>this.goSearch()}/>
+        
         {/* 头部nav */}
         <ScrollView
           className={style.scrollview}

@@ -1,0 +1,50 @@
+.phone{
+    width:100%;
+    height:100%;
+    background:#eee;
+    .inps{
+        width:100%;
+        height:90rpx;
+        line-height: 90rpx;
+        background:#fff;
+        display:flex;
+        border-bottom: 1px solid #eee;
+        .inptext{
+          width:100rpx;
+          height:90rpx;
+          margin:0 20rpx;
+          text-align: center;
+        }
+        input{
+            flex:1;
+            height:90rpx;
+            padding-left:30rpx;
+        }
+        .code{
+            width:200rpx;
+            height:60rpx;
+            line-height: 60rpx;
+            text-align: center;
+            margin-top:15rpx;
+            margin-right:20rpx;
+            color:#fc5d7b;
+            border:1px solid #fc5d7b;
+            border-radius: 45rpx;
+        }
+    }
+}
+.phonebtn{
+    width:95%;
+    background:skyblue;
+    color:#fff;
+    border-radius: 10px;
+    margin-top:200rpx;
+}
+.text{
+    width:100%;
+    text-align: center;
+    position: absolute;
+    left:0;
+    bottom:50px;
+    color:#666;
+}

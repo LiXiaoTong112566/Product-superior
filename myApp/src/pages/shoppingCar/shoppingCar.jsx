@@ -38,8 +38,12 @@ class Index extends Component {
       flag: !prevState.flag
     }))
   }
+<<<<<<< HEAD
   render() {
     // console.log(this.state)
+=======
+  render () {
+>>>>>>> hmm
     return (
       <View className='wrap'>
         <View className='main'>
