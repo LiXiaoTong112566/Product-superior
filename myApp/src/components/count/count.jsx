@@ -19,7 +19,8 @@ class Count extends Component {
     }
     componentWillMount() { }
     componentDidMount() {
-        this.props.detail.getskuQuery({ pid: 549, vids: "[5832]" })
+     
+       
     }
     componentWillUnmount() { }
 
@@ -40,13 +41,12 @@ class Count extends Component {
     }
     //改变选中的颜色
     async changeColor(data) {
-        console.log("change", JSON.parse(data));
-        let vids = JSON.parse(data)[0].valueVo.vid;
-        console.log("changeaaaaaa", vids);
-        let result = await this.props.detail.getskuQuery({ pid: 549, vids: `[${vids}]` });
-        console.log("改变选中的颜色", result);
-
-
+        console.log("change113", data);
+        let vids = JSON.parse(data.attributeValueJson)[0].valueVo.vid;
+         let result = await this.props.detail.getskuQuery({ pid:data.pid , vids: `[${vids}]` });
+         console.log("获取到的数据result",result)
+         this.props.detail.checkedColor=result.skuName;
+       
     }
 
     //改变数量
@@ -89,27 +89,15 @@ class Count extends Component {
             }
         }
     }
-
     //确认按钮
 
      countersign(){
-        let { skuQueryData,checkedData} = this.props.detail;
-        let sum={sum:this.state.sum};
-        let newData=Object.assign({},skuQueryData,sum);
-        checkedData.push(newData);
-        this.props.detail.changeColor(skuQueryData.skuName);
         this.props.detail.showCount();
-      
      }
 
     render() {
 
         let { productDetail, skuQueryData } = this.props.detail;
-
-        console.log("获取详情的数据", skuQueryData);
-
-
-        console.log("获取到的数据123", productDetail);
         return (
             <View className="addCountBox">
                 <View className="box">
@@ -130,11 +118,11 @@ class Count extends Component {
                         </View>
                     </View>
 
-                    {/* 数量 */}
-                    <Text className="num">数量</Text>
+                    {/* 规格 */}
+                    <Text className="num">默认</Text>
                     <View className="countBox">
                         {productDetail.supplierProductSkuVoList && productDetail.supplierProductSkuVoList.map((item, index) => {
-                            return <Text key={index} className={item.skuName === skuQueryData.skuName ? "color active" : "color"} onClick={() => this.changeColor(item.attributeValueJson)}>{item.skuName}</Text>
+                            return <Text key={index} className={item.skuName === skuQueryData.skuName ? "color active" : "color"} onClick={() => this.changeColor(item)}>{item.skuName}</Text>
                         })}
 
                     </View>
