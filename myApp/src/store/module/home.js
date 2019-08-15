@@ -1,7 +1,6 @@
 import { observable, action } from 'mobx'
 import regeneratorRuntime from "../../utils/runtime";
 console.log(regeneratorRuntime,'regeneratorRuntime')
-
 import { sepcialInfo } from '../../service'
 
 export default class DetailOne {

@@ -9,7 +9,8 @@ import Taro, { Component } from "@tarojs/taro";
 import { View, Button, Text, Image } from "@tarojs/components";
 import { observer, inject } from "@tarojs/mobx";
 import "./purchase.scss";
-
+import regeneratorRuntime from "../../utils/runtime";
+console.log(regeneratorRuntime,'regeneratorRuntime')
 @inject('detail')
 @observer
 
