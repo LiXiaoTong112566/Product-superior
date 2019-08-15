@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-13 20:26:30
- * @LastEditTime: 2019-08-15 00:37:22
+ * @LastEditTime: 2019-08-15 09:27:02
  * @LastEditors: Please set LastEditors
  */
 import Taro, { Component } from "@tarojs/taro";
@@ -10,6 +10,8 @@ import { View, Button, Text, Image } from "@tarojs/components";
 import { observer, inject } from "@tarojs/mobx";
 import "./purchase.scss";
 
+import regeneratorRuntime from "../../utils/runtime";
+console.log(regeneratorRuntime);
 @inject('detail')
 @observer
 
