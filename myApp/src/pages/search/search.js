@@ -14,6 +14,8 @@ import search from "../../static/seek/search.png"
 import del from "../../static/seek/del.png"
  
 
+//@inject('counterStore')
+//@observer
 class Search extends Component {
   componentWillMount() { 
    
@@ -35,8 +37,10 @@ class Search extends Component {
 
   componentDidHide() { }
 
-  increment = () => {
-    
+  // 删除历史记录
+  delHistory=()=>{
+     console.log("del")
+     
   }
 
   render() {
@@ -49,7 +53,7 @@ class Search extends Component {
           </View>
           <View className="history_search">
               <Text>历史搜索</Text>
-              <Image className="delete" src={del}></Image>
+              <Image className="delete" src={del} onClick={()=>this.delHistory()}></Image>
           </View>
           {/* 历史记录 */}
           <View className="record">

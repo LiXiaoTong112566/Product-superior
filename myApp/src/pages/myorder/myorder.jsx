@@ -6,7 +6,7 @@ import { View, Image } from '@tarojs/components'
 // import wudingdan from '../../static/images/wudingdan.png'
 import bigimg from '../../img/baobao.jpg'
 
-import './myorder.scss'
+import './myorder.module.scss'
 
 // @inject('counterStore')
 // @observer

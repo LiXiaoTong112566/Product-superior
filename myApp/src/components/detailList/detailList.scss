@@ -1,19 +1,23 @@
 .detailList{
     width: 100%;
-    background: #fff;
+    background: #ccc;
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
+
     .dl{
         width: 49%;
-        margin-top: 20px;
+        margin-top: 7px;
+        background: #fff;
+        margin-left:7rpx;
         .dt{
             text-align: center;
             .image{
                 display: inline-block;
-                width: 150px;
-                height: 300px;
+                width: 178px;
+                height: 240px;
                 background: #f90;
+                margin-top: 5rpx;
             }
         }
         .dd{
@@ -29,6 +33,7 @@
                 height: 50px;
                 text-align: center;
                 border: solid 1px red;
+                margin-left: 5rpx;
             }
             .unit{
                 font-size: 36px;

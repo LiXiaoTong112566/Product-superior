@@ -2,7 +2,7 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Image } from '@tarojs/components'
 import { observer, inject } from '@tarojs/mobx'
 
-import './shoppingCar.module.scss'
+import './shoppingCar.scss'
 import svgd from '../../img/椭圆形-为勾选.svg'
 import svg from '../../img/椭圆形-为勾选(1).svg'
 

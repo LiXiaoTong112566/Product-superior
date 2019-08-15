@@ -12,10 +12,9 @@ import vipImage from "../../static/images/黑卡@2x.png";
 class CommodityDetail extends Component {
   componentWillMount() { }
   componentDidMount() {
+    console.log(this.$router.params.id)
     this.props.detail.getProductDetail({ pid: 549 });
     this.props.detail.getdetailPicture({pid:549,basePid:549,userIdentity: 2});
-   
-     
     console.log(this.props);
   }
 
@@ -35,7 +34,7 @@ showCountFn(){
   }
 
   componentWillReact() {
-    console.log('componentWillReact')
+    console.log('componentWillReact');
   }
 
   componentDidShow() { }
@@ -48,7 +47,7 @@ showCountFn(){
 
   render() {
     console.log("获取到的数据",this.props.detail.productDetail);
-    let {productDetail,detailPictureData}=this.props.detail;
+    let {productDetail,detailPictureData,checkedColor}=this.props.detail;
     return (
       <View className={style.commodityDetailBox}>
         {/* 主要的内容 */}
@@ -82,7 +81,7 @@ showCountFn(){
               <View>规格</View>
             </View>
             <View className={style.dimensionsRight}>
-            >
+            {checkedColor}
           </View>
           </View>
           <View className={style.clue}>
@@ -99,11 +98,13 @@ showCountFn(){
           </View>
         </View>
         {console.log("数量123",this.props.detail.countFlag)}
+           {console.log("数量123",this.props.detail.shoppingFlag)}
+        {/* 购物车弹窗 */}
+        {this.props.detail.shoppingFlag?<Purchase></Purchase>:""}
           {/* 添加数量弹窗*/}
           {this.props.detail.countFlag?<Count></Count>:""}
           
-          {/* 购物车弹窗 */}
-          {this.props.detail.shoppingFlag?<Purchase></Purchase>:""}
+          
         
         <View className={style.footer}>
           <View className={style.share}>
