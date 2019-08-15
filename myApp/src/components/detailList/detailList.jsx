@@ -5,8 +5,8 @@ import { observer, inject } from '@tarojs/mobx'
 import './detailList.scss'
 
 
-// @inject('detailOne')
-// @observer
+@inject('indexList')
+@observer
 
 class DetailList extends Component {
     componentWillMount() { }
@@ -25,22 +25,13 @@ class DetailList extends Component {
 
     componentDidHide() { }
 
-    increment = () => {
-        // const { counterStore } = this.props
-        // counterStore.increment()
-    }
-
-
-    // mainImgUrl  title  salesPrice  vipPrice   earnMoney
     render() {
-        console.log(this.props.data)
-        // const { counterStore: { counter } } = this.props
         return (
             <View class="detailList">
                 {
-                    this.props.data && this.props.data.map((item, index) => {
+                    this.props.indexList.indexBotData && this.props.indexList.indexBotData.map((item, index) => {
                         return (
-                            <View class="dl" key={index}>
+                            <View class="dl" key={index+"dl"}>
                                 <View class="dt">
                                     <Image src={item.mainImgUrl} class="image"></Image>
                                 </View>

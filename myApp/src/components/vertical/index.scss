@@ -1,0 +1,42 @@
+//图文混排  竖
+.dls{
+    display: flex;
+    width:100%;
+    height: 282rpx;
+    background: #fff;
+    margin-top: 20rpx;  
+    .left_dt{
+        margin: 20rpx;
+        width:35%;
+        height:242rpx;
+        background:skyblue;
+    } 
+    .right_dd{
+        flex:1;
+        box-sizing: border-box;
+        padding:15px;
+        .right_title{
+            color: #323a45;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            line-height: 40rpx;
+        } 
+        .right_span{
+            padding-top: 80rpx;
+            color:#fc5d7b;
+            .right_text{
+                font-weight: bold;
+                font-size: 40rpx;
+                margin-right:20rpx;
+            }
+            .right_money{
+                font-size: 25rpx;
+                background:#f3bec4;
+            }
+        }
+    }
+    
+}
