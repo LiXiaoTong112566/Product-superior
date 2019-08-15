@@ -6,15 +6,18 @@
  * @LastEditors: Please set LastEditors
  */
 import DetailModule from './module/detail';
-import IndexList  from "./module/indexList"
-import Home from "./module/home"
+import IndexList  from "./module/indexList";
+import Home from "./module/home";
+import Search from "./module/search";
 //获取到的商品详情
 let detail =new DetailModule();
 let indexList = new IndexList()
 let home = new Home()
+let search = new Search()
 //登录
 export default {
   indexList,
   detail,
-  home
+  home,
+  search
 };

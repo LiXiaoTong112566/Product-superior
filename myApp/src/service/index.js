@@ -8,3 +8,4 @@
 export * from "./detail";
 export * from './categoryQuery'
 export * from './home'
+export * from "./search"
