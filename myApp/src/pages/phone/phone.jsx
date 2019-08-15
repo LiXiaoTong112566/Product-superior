@@ -8,7 +8,7 @@ import './phone.scss'
 
 //@inject('counterStore')
 //@observer
-class Search extends Component {
+class Phone extends Component {
     constructor(){
         super()
         this.state={
@@ -72,4 +72,4 @@ class Search extends Component {
   }
 }
 
-export default Search
+export default Phone
