@@ -18,9 +18,6 @@ class App extends Component {
       'pages/indexList/indexList',
       'pages/delivery/index',
       "pages/binding/binding",
-      'pages/index/index',
-      'pages/mine/mine',
-      'pages/shoppingCar/shoppingCar',
       'pages/special/special',
       "pages/search/search",
       "pages/phone/phone"
@@ -40,18 +37,18 @@ class App extends Component {
       selectedColor: "#56d2bf",
       list: [{
         pagePath: "pages/index/index",
-        iconPath:"static/images/shouye.png",
-        selectedIconPath:"static/images/shouye_active.png",
+        iconPath: "static/images/shouye.png",
+        selectedIconPath: "static/images/shouye_active.png",
         text: "首页"
       }, {
         pagePath: "pages/shoppingCar/shoppingCar",
-        iconPath:"static/images/shop.png",
-        selectedIconPath:"static/images/xin.png",
+        iconPath: "static/images/shop.png",
+        selectedIconPath: "static/images/xin.png",
         text: "购物车"
       }, {
         pagePath: "pages/mine/mine",
-        iconPath:"static/images/my.png",
-        selectedIconPath:"static/images/my_active.png",
+        iconPath: "static/images/my.png",
+        selectedIconPath: "static/images/my_active.png",
         text: "我的"
       }]
     },
