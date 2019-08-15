@@ -25,8 +25,8 @@ class Mine extends Component {
         {icon:dsh,title:"代收货"}
       ],
       list:[
-        {icon:yhj,title:"我的优惠劵"},
-        {icon:dz,title:"收货地址"},
+        {icon:yhj,title:"我的优惠劵",},
+        {icon:dz,title:"收货地址", slite:'/pages/addressS/index'},
         {icon:kf,title:"联系客服"},
         {icon:sm,title:"实名认证"}
       ]
@@ -47,7 +47,12 @@ class Mine extends Component {
   componentDidShow() { }
 
   componentDidHide() { }
-
+  dz(title,slite){
+    console.log(title,slite,'sliteslitesliteslitesliteslite')
+    Taro.navigateTo({
+      url:slite
+    })
+  }
   render() {
     let {dls, list} = this.state;
     return (
@@ -73,7 +78,7 @@ class Mine extends Component {
                   {list.map((file,index)=>
                       <View className="list" key={"list"+index}>
                         <Image className="dts" src={file.icon}/>
-                        <Text>{file.title}</Text>
+                        <Text onClick={this.dz.bind(this,file.title,file.slite)}>{file.title}</Text>
                         <Image className="dts" src={jt}/>
                       </View>
                     )}

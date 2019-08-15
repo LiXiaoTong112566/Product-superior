@@ -6,5 +6,6 @@
  * @LastEditors: Please set LastEditors
  */
 export * from "./detail";
-export * from './categoryQuery'
-export * from './home'
+export * from './categoryQuery';
+export * from './home';
+export * from './city';

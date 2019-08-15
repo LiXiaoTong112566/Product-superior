@@ -11,6 +11,7 @@ import { observer, inject } from "@tarojs/mobx";
 import "./purchase.scss";
 
 import regeneratorRuntime from "../../utils/runtime";
+
 console.log(regeneratorRuntime);
 @inject('detail')
 @observer

@@ -1,7 +1,8 @@
 import { observable, action } from 'mobx'
 import { categoryQuery,productList } from '../../service'
-import regeneratorRuntime from "../../utils/runtime";
-console.log(regeneratorRuntime,'regeneratorRuntime')
+import regeneratorRuntime from "../../utils/runtime"
+console.log(regeneratorRuntime)
+
 export default class DetailOne {
     //头部
     @observable indexLIstData=[];

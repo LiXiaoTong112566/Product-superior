@@ -3,7 +3,8 @@ import { View, Button, Text, Image } from '@tarojs/components'
 import { observer, inject } from '@tarojs/mobx';
 import "./count.scss";
 import regeneratorRuntime from "../../utils/runtime";
-console.log(regeneratorRuntime);
+console.log(regeneratorRuntime)
+
 @inject('detail')
 @observer
 

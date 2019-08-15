@@ -1,7 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { Provider } from '@tarojs/mobx'
 import Index from './pages/index'
-
+import '@tarojs/async-await'
 import store from './store/index'
 import './app.scss'
 
@@ -9,6 +9,7 @@ class App extends Component {
   componentDidMount() { }
   config = {
     pages: [
+      "pages/share/share",
       'pages/index/index',
       "pages/address/index",
       'pages/shoppingCar/shoppingCar',
@@ -20,7 +21,8 @@ class App extends Component {
       "pages/binding/binding",
       'pages/special/special',
       "pages/search/search",
-      "pages/phone/phone"
+      "pages/phone/phone",
+      "pages/addressS/index"
     ],
     window: {
       backgroundTextStyle: 'light',
