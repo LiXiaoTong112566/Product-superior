@@ -58,7 +58,6 @@ class IndexList extends Component {
         <View className='centen'>
           {
            childsff&&childsff.map((item, index) => {
-              console.log(item, 'item++++++++++++++++++++++')
               return (
                 <View className='cenZi' onClick={this.centen.bind(this, item.cid, index)}>
                   <Image

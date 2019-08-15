@@ -1,4 +1,19 @@
 canvas {
     background: #fff;
     margin:5px;
-  }
+    border:1px solid #eee;
+}
+.footer{
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+}
+.share{
+ display:flex;
+ flex-direction: column;
+}
+.keep{
+  width: 100rpx;
+  height:100rpx;
+  margin:10px auto;
+}

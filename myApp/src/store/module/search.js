@@ -11,9 +11,8 @@ export default class SearchShop {
 
   //搜索商品
   @action searchShopText = async (params) => {
-      console.log(params,"搜索")
       const data = await searchShop(params);
-      console.log(data)
+      console.log(data.result)
       this.searchText=data.result;
   }
 

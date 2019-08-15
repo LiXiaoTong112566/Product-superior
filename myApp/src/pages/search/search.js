@@ -5,6 +5,8 @@ import { observer, inject } from '@tarojs/mobx'
 import './search.scss'
 import search from "../../static/seek/search.png"
 import del from "../../static/seek/del.png"
+import max from "../../static/seek/价格排序icon.png"
+import min from "../../static/seek/价格排序icon -1.png"
  
 
 @inject('search')
@@ -51,6 +53,8 @@ class Search extends Component {
   }
   render() {
     let {text} = this.state;
+    let {searchText} = this.props.search;
+    console.log(searchText,"bbbbbbbbb")
     return (
       <View className="search">
           <View className="header_search">
@@ -71,8 +75,25 @@ class Search extends Component {
              <Text>牛奶</Text>
              <Text>帽子扣</Text> */}
           </View>
+          {/* 搜索的商品列表 */}
+          <View className="shopList">
+              <View className="navShop">
+                <Text onClick={()=>{this.screen(0)}}>综合</Text>
+                <Text onClick={()=>{this.screen(1)}}>最新</Text>
+                <View onClick={()=>{this.screen(2)}}>
+                  <Text>价格</Text>
+                  <Image className="pages" src={max}/>
+                </View>
+              </View>
+               
+                    {/* <Label className='tp' onClick={()=>{this.screen("desc")}}>△</Label>
+                    <Label className='bo' onClick={()=>{this.screen("asc")}}>▽</Label>   */}
+          </View>
       </View>
     )
+  }
+  screen=(queryType,size="desc")=>{
+     console.log(queryType,size)
   }
 }
 

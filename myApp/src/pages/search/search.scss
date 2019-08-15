@@ -55,3 +55,24 @@
         border-radius: 10px;
     }
 }
+.shopList{
+    position: absolute;
+    left:0;
+    top:80rpx;
+    z-index:999;
+    background:#fff;
+    width:100%;
+    .navShop{
+        width:100%;
+        height:80rpx;
+        line-height: 80rpx;
+        display:flex;
+        justify-content: space-around;
+        .pages{
+            display: inline-block;
+            width:20px;
+            height:40px;
+            margin-left:10px;
+        }
+    }
+}

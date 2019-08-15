@@ -5,7 +5,8 @@ import regeneratorRuntime from "../../utils/runtime";
 console.log(regeneratorRuntime);
 
 import './share.scss'
- 
+import keep from "../../static/images/6.png"
+import frend from "../../static/images/7.png"
 
 //@inject('counterStore')
 //@observer
@@ -137,9 +138,11 @@ class Share extends Component {
       canvasId: 'cardCanvas',
       fileType: 'png'
     })
+    console.log(res)
     let saveRes = await Taro.saveImageToPhotosAlbum({
       filePath: res.tempFilePath
     })
+    console.log(saveRes)
     if (saveRes.errMsg === 'saveImageToPhotosAlbum:ok') {
       Taro.showModal({
         title: '图片保存成功',
@@ -177,7 +180,26 @@ class Share extends Component {
                 style="width: 200px; height: 450px"
                 canvasId="cardCanvas" >
               </Canvas>
-              <Button onClick={this.saveCard} className="btn-save" type="primary" size="mini">保存到相册</Button>
+              <View className="footer">
+                  <View  onClick={this.saveCard} className="share">
+                      <Image className="keep" src={keep}/>
+                      <Button
+                      className="btn-save" 
+                      type="primary" 
+                      size="mini"
+                      >保存到相册</Button>
+                  </View>
+                  <View  onClick={this.saveCard} className="share">
+                    <Image className="keep" src={frend}/>
+                    <Button 
+                      className="btn-save" 
+                      type="primary" 
+                      size="mini"
+                      >
+                      微信好友</Button>
+                  </View>
+              </View>
+             
             </View> 
         }
       </View>
