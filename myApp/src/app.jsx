@@ -15,7 +15,7 @@ class App extends Component {
       "pages/address/index",
       'pages/shoppingCar/shoppingCar',
       'pages/mine/mine',
-      'pages/myOrder/myorder',
+      'pages/myorder/myorder',
       'pages/commodityDetails/commodityDetail',
       'pages/indexList/indexList',
       'pages/delivery/index',
