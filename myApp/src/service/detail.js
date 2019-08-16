@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-13 14:52:05
- * @LastEditTime: 2019-08-14 23:38:01
+ * @LastEditTime: 2019-08-15 20:06:51
  * @LastEditors: Please set LastEditors
  */
 import fly from "../utils/request.js";
@@ -22,6 +22,12 @@ export let detailPicture = params => {
   export let skuQuery = params => {
       return fly.post('/api/open/product/sku/query/1', params);
   }
+
+  //获取商品的弹窗里面的属性
+
+  export let skuAttrs = params => {
+    return fly.post('/api/open/product/sku/attrs/1.0.0', params);
+}
 
   
   //购物详情

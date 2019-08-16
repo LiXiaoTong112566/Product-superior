@@ -34,20 +34,15 @@ class Index extends Component {
 
   componentDidHide() { }
   checkedAll() {
-    this.setState(prevState => ({
-      flag: !prevState.flag
-    }))
+    this.setState({
+      flag: !this.state.flag
+    })
   }
   render() {
     // console.log(this.state)
     return (
       <View className='wrap'>
         <View className='main'>
-          <Cart></Cart>
-          <Cart></Cart>
-          <Cart></Cart>
-          <Cart></Cart>
-          <Cart></Cart>
           <Cart></Cart>
         </View>
         <View className='cart_footer'>

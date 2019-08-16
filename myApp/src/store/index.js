@@ -5,19 +5,26 @@
  * @LastEditTime: 2019-08-14 10:32:27
  * @LastEditors: Please set LastEditors
  */
+import regeneratorRuntime from "../utils/runtime";
+console.log(regeneratorRuntime);
 import DetailModule from './module/detail';
 import IndexList  from "./module/indexList";
 import Home from "./module/home";
 import Search from "./module/search";
+import City from "./module/city"
+
 //获取到的商品详情
 let detail =new DetailModule();
 let indexList = new IndexList()
 let home = new Home()
 let search = new Search()
+
+let city = new City()
 //登录
 export default {
   indexList,
   detail,
   home,
-  search
+  search,
+  city
 };

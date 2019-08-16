@@ -1,9 +1,10 @@
 import Taro, { Component } from '@tarojs/taro'
 import { Provider } from '@tarojs/mobx'
 import Index from './pages/index'
-
+import '@tarojs/async-await'
 import store from './store/index'
 import './app.scss'
+
 
 class App extends Component {
   componentDidMount() { }
@@ -31,7 +32,10 @@ class App extends Component {
       //手机号
       "pages/phone/phone",
       //分享合成canvas
-      "pages/share/share"
+      "pages/share/share",
+      "pages/addressS/index"
+     
+
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -65,14 +69,10 @@ class App extends Component {
     },
   }
 
-
-
   componentDidShow() { }
-
   componentDidHide() { }
 
   componentDidCatchError() { }
-
   // 在 App 类中的 render() 函数没有实际作用
   // 请勿修改此函数
   render() {
@@ -83,5 +83,6 @@ class App extends Component {
     )
   }
 }
+
 
 Taro.render(<App />, document.getElementById('app'))

@@ -4,6 +4,7 @@ import { observer, inject } from '@tarojs/mobx'
 
 import style from './index.module.scss'
 import search from '../../static/images/search.png'
+//import { object } from 'C:/Users/Lenovo/AppData/Local/Microsoft/TypeScript/3.5/node_modules/@types/prop-types';
 
 // @inject('home')
 // @observer
@@ -91,13 +92,31 @@ class Index extends Component {
   }
 //跳转到商品的详情
 
-  jumpDetail(id){
-    console.log("获取的商品",id);
+  jumpDetail(itemData){
+    console.log("获取的商品",itemData.jumpUrl);
+    let urlImage=itemData.jumpUrl;
+    let arr=urlImage.split("//");//["jinaup:", "contentValue=product&businessId=70370&uiType=1"]
+    console.log("切割成的数组",arr);
+    let newArr=arr[1].split("&");
+    console.log("新的数组",newArr);
+    
 
-    // Taro.navigateTo({
-    //   url:`/pages/special/special?id=${id}`
-    // })
+  let id= newArr[1].split("=")[1];
+
+    Taro.navigateTo({
+      url:`/pages/commodityDetails/commodityDetail?id=${id}`
+    })
+    
+
   }
+
+   format(str) {
+    return JSON.parse('{'+str.replace(/=/g,'":"').replace(/&/g,'","')+'"}"');
+    
+  }
+  //格式化地址栏的参数
+
+ 
 
   goSearch=()=>{
      wx.navigateTo({url:"/pages/search/search"})
@@ -193,7 +212,7 @@ class Index extends Component {
             <View className={style.jingxuancon}>
               {
                 this.state.sectionList[7]&&this.state.sectionList[7].items.map((item, i) => {
-                  return <View className={style.jingxuanItem} key={i}>
+                  return <View className={style.jingxuanItem} key={i} onClick={()=>this.jumpDetail(item)}>
                     <View className={style.jingxuanimgbox}>
                       <Image src={item.imgUrl} className={style.jingxuanimg}></Image>
                     </View>
@@ -215,7 +234,7 @@ class Index extends Component {
             <View className={style.jingxuancon}>
               {
                 this.state.sectionList[9]&&this.state.sectionList[9].items.map((item, i) => {
-                  return <View className={style.jingxuanItem} key={i}>
+                  return <View className={style.jingxuanItem} key={i}  onClick={()=>this.jumpDetail(item)}>
                     <View className={style.jingxuanimgbox}>
                       <Image src={item.imgUrl} className={style.jingxuanimg}></Image>
                     </View>
@@ -237,7 +256,7 @@ class Index extends Component {
             <View className={style.jingxuancon}>
               {
                 this.state.sectionList[11]&&this.state.sectionList[11].items.map((item, i) => {
-                  return <View className={style.jingxuanItem} key={i}>
+                  return <View className={style.jingxuanItem} key={i}  onClick={()=>this.jumpDetail(item)}>
                     <View className={style.jingxuanimgbox}>
                       <Image src={item.imgUrl} className={style.jingxuanimg}></Image>
                     </View>
@@ -259,7 +278,7 @@ class Index extends Component {
             <View className={style.jingxuancon}>
               {
                 this.state.sectionList[13]&&this.state.sectionList[13].items.map((item, i) => {
-                  return <View className={style.jingxuanItem} key={i}>
+                  return <View className={style.jingxuanItem} key={i}  onClick={()=>this.jumpDetail(item)}>
                     <View className={style.jingxuanimgbox}>
                       <Image src={item.imgUrl} className={style.jingxuanimg}></Image>
                     </View>
