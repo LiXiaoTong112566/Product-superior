@@ -10,8 +10,8 @@ class App extends Component {
   componentDidMount() { }
   config = {
     pages: [
-      "pages/share/share",
       'pages/index/index',
+      "pages/share/share",
       "pages/address/index",
       'pages/shoppingCar/shoppingCar',
       'pages/mine/mine',

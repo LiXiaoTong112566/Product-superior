@@ -19,51 +19,7 @@ class Myorder extends Component {
     }
   }
   componentWillMount() {
-    const result = {
-     
-      "title": "内含哈密瓜味月饼5个、凤梨味5个、蛋黄香芋味月饼3个、蛋黄红豆味月饼3个",
-      "shortTitle": "BY-HEALTH 汤臣倍健 牛乳钙片压片糖果 60片/瓶",
-     
-      mainImgUrl: "https://jnup.oss-cn-beijing.aliyuncs.com/product/a911cc3d771d0cef5fca95e441976a3e.jpg",
-      "supplierProductPictureVoList": [{
-        "ppid": 686204,
-        "pid": 37253,
-        "imgType": 1,
-        "imgUrl": "http://haitao.nos.netease.com/e7e0936a25764af6b31fba26f311c4c11525954376593jh0hu4ig13297.jpg",
-        "imgWidth": null,
-        "imgHeight": null,
-        "sortId": 1,
-        "state": 1,
-        "createTime": 1555563892000,
-        "updateTime": 1555583277000
-      }, {
-        "ppid": 686205,
-        "pid": 37253,
-        "imgType": 1,
-        "imgUrl": "http://haitao.nos.netease.com/1a2258a19de84c938a95cde3ea88e5331525954377012jh0hu4u413298.jpg",
-        "imgWidth": null,
-        "imgHeight": null,
-        "sortId": 2,
-        "state": 1,
-        "createTime": 1555563892000,
-        "updateTime": 1555583277000
-      }, {
-        "ppid": 686206,
-        "pid": 37253,
-        "imgType": 1,
-        "imgUrl": "http://haitao.nos.netease.com/76bd5456369c43438655b43e88b6a20e1525954377917jh0hu5ja13299.jpg",
-        "imgWidth": null,
-        "imgHeight": null,
-        "sortId": 3,
-        "state": 1,
-        "createTime": 1555563892000,
-        "updateTime": 1555583277000
-      }],
-      "shareUrl": "https://h5.jinaup.com/pc/productInfoDetail.html?pid=37253&fromInviteCode=2TWHAR5",
-      "xcxShareUrl": "/pages/go2detail/main?id=37253&fromInviteCode=2TWHAR5",
-      "xcxFriendShareUrl": "https://h5.jinaup.com/pc/productInfoDetail.html?pid=37253&fromInviteCode=2TWHAR5",
-
-    },
+    
   }
   componentDidMount() {
 
