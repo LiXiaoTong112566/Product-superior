@@ -54,7 +54,7 @@ class Search extends Component {
   render() {
     let {text} = this.state;
     let {searchText} = this.props.search;
-    console.log(searchText,"bbbbbbbbb")
+    console.log(searchText||searchText)
     return (
       <View className="search">
           <View className="header_search">
@@ -83,11 +83,19 @@ class Search extends Component {
                 <View onClick={()=>{this.screen(2)}}>
                   <Text>价格</Text>
                   <Image className="pages" src={max}/>
+                   {/* <Label className='tp' onClick={()=>{this.screen("desc")}}>△</Label>
+                    <Label className='bo' onClick={()=>{this.screen("asc")}}>▽</Label>   */}
                 </View>
               </View>
-               
-                    {/* <Label className='tp' onClick={()=>{this.screen("desc")}}>△</Label>
-                    <Label className='bo' onClick={()=>{this.screen("asc")}}>▽</Label>   */}
+               <View className="dlsList">
+               {searchText&&searchText[0].description}
+                  <View className="dl">
+                      <View className="dt">
+                        {searchText&&searchText[0].description}
+                      </View>
+                  </View>
+               </View>
+                   
           </View>
       </View>
     )
